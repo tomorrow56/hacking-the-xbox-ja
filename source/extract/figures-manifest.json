@@ -1,0 +1,10 @@
+{
+  "_note": "This is a placeholder. Run `python3 scripts/extract_images.py` with the PDF to generate the real manifest.",
+  "stats": {
+    "total_pages": null,
+    "images_extracted": 0,
+    "pages_with_images": 0,
+    "errors": []
+  },
+  "images": []
+}

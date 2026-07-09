@@ -1,0 +1,3 @@
+# Images extracted from source PDF go here.
+# Run: python3 scripts/extract_images.py
+# Then copy from source/extract/images/ to docs/public/images/

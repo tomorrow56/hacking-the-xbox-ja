@@ -1,0 +1,174 @@
+{
+  "_note": "Preliminary chapter map. PDF page ranges are approximate pending extract_text.py output.",
+  "_source": "Hacking the Xbox: An Introduction to Reverse Engineering, Andrew 'bunnie' Huang, No Starch Press 2003",
+  "sections": [
+    {
+      "id": "prologue",
+      "title_en": "Prologue: Before We Begin",
+      "title_ja": "プロローグ：はじめに",
+      "doc": "docs/ja/prologue.md",
+      "pdf_pages_approx": "1-10",
+      "printed_pages_approx": "xix-xxviii",
+      "status": "draft"
+    },
+    {
+      "id": "ch01",
+      "title_en": "Chapter 1: Introduction to Reverse Engineering",
+      "title_ja": "第1章：リバースエンジニアリング入門",
+      "doc": "docs/ja/ch01.md",
+      "pdf_pages_approx": "11-30",
+      "printed_pages_approx": "1-20",
+      "status": "draft"
+    },
+    {
+      "id": "ch02",
+      "title_en": "Chapter 2: Reverse Engineering—A Primer",
+      "title_ja": "第2章：リバースエンジニアリング入門",
+      "doc": "docs/ja/ch02.md",
+      "pdf_pages_approx": "31-60",
+      "printed_pages_approx": "21-50",
+      "status": "not-started"
+    },
+    {
+      "id": "ch03",
+      "title_en": "Chapter 3: Xbox Hardware Architecture",
+      "title_ja": "第3章：Xboxハードウェアアーキテクチャ",
+      "doc": "docs/ja/ch03.md",
+      "pdf_pages_approx": "61-90",
+      "printed_pages_approx": "51-80",
+      "status": "not-started"
+    },
+    {
+      "id": "ch04",
+      "title_en": "Chapter 4: Hacking the Xbox",
+      "title_ja": "第4章：Xboxをハックする",
+      "doc": "docs/ja/ch04.md",
+      "pdf_pages_approx": "91-130",
+      "printed_pages_approx": "81-120",
+      "status": "not-started"
+    },
+    {
+      "id": "ch05",
+      "title_en": "Chapter 5: The Xbox Softmod",
+      "title_ja": "第5章：Xboxソフトモッド",
+      "doc": "docs/ja/ch05.md",
+      "pdf_pages_approx": "131-150",
+      "printed_pages_approx": "121-140",
+      "status": "not-started"
+    },
+    {
+      "id": "ch06",
+      "title_en": "Chapter 6: Exploiting the Xbox",
+      "title_ja": "第6章：Xboxのエクスプロイト",
+      "doc": "docs/ja/ch06.md",
+      "pdf_pages_approx": "151-170",
+      "printed_pages_approx": "141-160",
+      "status": "not-started"
+    },
+    {
+      "id": "ch07",
+      "title_en": "Chapter 7: Debugging Techniques",
+      "title_ja": "第7章：デバッグ技法",
+      "doc": "docs/ja/ch07.md",
+      "pdf_pages_approx": "171-195",
+      "printed_pages_approx": "161-185",
+      "status": "not-started"
+    },
+    {
+      "id": "ch08",
+      "title_en": "Chapter 8: The Xbox Security System",
+      "title_ja": "第8章：Xboxセキュリティシステム",
+      "doc": "docs/ja/ch08.md",
+      "pdf_pages_approx": "196-220",
+      "printed_pages_approx": "186-210",
+      "status": "not-started"
+    },
+    {
+      "id": "ch09",
+      "title_en": "Chapter 9: Reverse Engineering Microsoft's Kernel",
+      "title_ja": "第9章：MicrosoftカーネルのリバースエンジニアリングXbox",
+      "doc": "docs/ja/ch09.md",
+      "pdf_pages_approx": "221-245",
+      "printed_pages_approx": "211-235",
+      "status": "not-started"
+    },
+    {
+      "id": "ch10",
+      "title_en": "Chapter 10: Hacking the Xbox Revisited",
+      "title_ja": "第10章：Xboxハッキング再訪",
+      "doc": "docs/ja/ch10.md",
+      "pdf_pages_approx": "246-260",
+      "printed_pages_approx": "236-250",
+      "status": "not-started"
+    },
+    {
+      "id": "ch11",
+      "title_en": "Chapter 11: Hacking Ethics and the Law",
+      "title_ja": "第11章：ハッキングの倫理と法律",
+      "doc": "docs/ja/ch11.md",
+      "pdf_pages_approx": "261-275",
+      "printed_pages_approx": "251-265",
+      "status": "not-started"
+    },
+    {
+      "id": "ch12",
+      "title_en": "Chapter 12: Citizen Engineer",
+      "title_ja": "第12章：市民エンジニア",
+      "doc": "docs/ja/ch12.md",
+      "pdf_pages_approx": "276-285",
+      "printed_pages_approx": "266-275",
+      "status": "not-started"
+    },
+    {
+      "id": "ch13",
+      "title_en": "Chapter 13: Epilogue",
+      "title_ja": "第13章：エピローグ",
+      "doc": "docs/ja/ch13.md",
+      "pdf_pages_approx": "286-295",
+      "printed_pages_approx": "276-285",
+      "status": "not-started"
+    },
+    {
+      "id": "app-a",
+      "title_en": "Appendix A: Xbox Hardware Reference",
+      "title_ja": "付録A：Xboxハードウェアリファレンス",
+      "doc": "docs/ja/app-a.md",
+      "status": "not-started"
+    },
+    {
+      "id": "app-b",
+      "title_en": "Appendix B: Xbox System Memory Map",
+      "title_ja": "付録B：Xboxシステムメモリマップ",
+      "doc": "docs/ja/app-b.md",
+      "status": "not-started"
+    },
+    {
+      "id": "app-c",
+      "title_en": "Appendix C: Xbox Motherboard Schematic Snippets",
+      "title_ja": "付録C：Xboxマザーボード回路図断片",
+      "doc": "docs/ja/app-c.md",
+      "status": "not-started"
+    },
+    {
+      "id": "app-d",
+      "title_en": "Appendix D: Xbox DVD Drive Information",
+      "title_ja": "付録D：XboxDVDドライブ情報",
+      "doc": "docs/ja/app-d.md",
+      "status": "not-started"
+    },
+    {
+      "id": "app-e",
+      "title_en": "Appendix E: Xbox Software Interfaces",
+      "title_ja": "付録E：Xboxソフトウェアインターフェース",
+      "doc": "docs/ja/app-e.md",
+      "status": "not-started"
+    },
+    {
+      "id": "app-f",
+      "title_en": "Appendix F: Resources",
+      "title_ja": "付録F：参考資料",
+      "doc": "docs/ja/app-f.md",
+      "status": "not-started"
+    }
+  ]
+}
