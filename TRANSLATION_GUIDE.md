@@ -56,6 +56,47 @@ Never use the phrases "公式日本語版", "公認翻訳", or "正規翻訳". A
 - Kanji compounds for native-equivalent terms where natural.
 - Footnotes: use `<sup>N</sup>` in the body and a `## 注` section at the end of the file. See **Footnote handling** below.
 
+### First-person pronoun
+- Use **「僕」** (not 「私」) for bunnie's first-person narration throughout. The Prologue and hacker profiles have a personal, conversational, hacker-oriented voice. 「僕」 preserves that tone.
+  - "I hack because..." → 「僕がハックするのは……」
+  - "I feel..." → 「僕は……と感じている」
+  - "my work / my research" → 「僕の仕事」 / 「僕の研究」
+
+### Naturalness rules (do not over-translate English syntax)
+
+**Split long English sentences into shorter Japanese sentences.** English subordinate clauses chained with "and", "but", "since", "while", "hence" often produce unreadable Japanese if translated clause-by-clause. Break them wherever a natural pause occurs.
+
+**"not because A, but because B"** → translate as: 「Aだからではない。Bだからこそ……」
+> Example: "not because it is an outstanding example of security, but because it is a high profile product…"
+> → 「セキュリティ設計の優れた手本だったからではない。知名度が高く大量に出回る製品だったからこそ……」
+
+**Resolve ambiguous pronouns from context.** "its chairman" → Microsoftの会長 (not XboxやXboxの議長).
+
+**"hostile user environment"** means: a device physically in the user's hands — the user can open it, observe it, modify it, and attack it. Translate as 「ユーザーの手元という『敵対的な』環境」 with explanatory context if needed.
+
+**"secret" in security contexts** means cryptographic keys or protected information. Translate contextually as 「秘密情報」, 「秘密鍵」, or 「保護情報」 — never literally as 「秘密」 without qualification.
+
+**Avoid literal filler phrases:**
+- "One observation is that…" → 「このことは……という示唆を与える」 or just make it a direct statement
+- "The Catch-22 is that…" → 「問題はここにある。……」 or 「「鶏と卵」のジレンマがある。……」
+- "Additionally," → 「さらに、」 (fine) but do not start too many consecutive sentences with transitional adverbs
+
+**"high profile, high volume product"** → 「知名度が高く大量に出回る製品」 (not 「高知名度・大量生産品」)
+
+**"pool of engineering talent"** → 「エンジニアの人材基盤」 or 「技術者の層」 (not 「エンジニアリング人材のプール」)
+
+**"underground society"** (of hackers) → 「アンダーグラウンドなコミュニティ」 or 「地下コミュニティ」 (not 「地下社会」 which implies criminal underworld)
+
+**"fiduciary interest"** in a non-legal context → 「職業的な責務として深い関心を持っている」 (not the literal 「受託的な関心」)
+
+**"tangible artifact"** → 「物理的な成果物」 or 「手で触れられる成果物」 (not 「有形のアーティファクト」)
+
+**Key example rewrites:**
+
+Bad:  「Xboxの経験は、ユーザの手元にある敵対的な環境において信頼できるクライアントを構築することは——大企業であっても、潤沢な資金があっても——困難だということを示している。一つの観察として、安価で信頼できるハードウェアクライアントを構築するリスクと難しさは、そのようなクライアントハードウェアに委ねることができる秘密の重要性に上限を設けることになる。」
+
+Good: 「Xboxの経験は、ユーザーの手元という「敵対的な」環境で信頼できるクライアントを構築することがいかに難しいかを示している。たとえ大企業であっても、資金が潤沢であっても、それは容易ではない。このことは一つの示唆を与える——安価なハードウェアクライアントに委ねられる秘密情報の重要度には、おのずと上限がある。安く大量に配布される機器を完全に守ることは難しい。だからこそ、その内部に置く秘密鍵や保護情報も、「破られたとしても許容できる範囲」に抑えるべきなのだ。」
+
 ### Sidebars and callout boxes
 VitePress does not have a native sidebar container, so use a blockquote with a bold heading:
 
@@ -92,101 +133,4 @@ Preserve "Note" and "Tip" callouts as:
 
 ## Footnote handling
 
-**Do NOT use Markdown footnote syntax in this project.** VitePress does not support `[^n]` / `[^n]:` natively (no `markdown-it-footnote` plugin is installed), and both patterns create dead links that break the build.
-
-Forbidden patterns:
-- `[^1]` inline reference → **breaks build**
-- `[^1]: note text` definition → **breaks build**
-- `[3](note text)` link-style → **breaks build**
-
-Correct format:
-
-In the body, mark the footnote call with an HTML superscript:
-```markdown
-本文テキスト<sup>1</sup>続きのテキスト
-```
-
-At the end of the file, before the `---` footer, add a `## 注` section with plain numbered lines:
-```markdown
-## 注
-
-1. 原注テキスト (英語原文: "original English text")
-2. source: NPDFunworld
-```
-
-Always include the original English text in parentheses after the Japanese translation.
-
-## TODO handling
-
-Use HTML comments so they are invisible to readers but visible in source:
-
-```markdown
-<!-- TODO: verify: paragraph unclear due to PDF extraction artifact -->
-<!-- TODO: figure: Figure 3-2 — confirm image file from manifest -->
-<!-- TODO: footnote: footnote 4 text garbled on PDF page 23 -->
-```
-
-Never delete a TODO without completing the underlying check against the source PDF.
-
-## Chapter frontmatter requirements
-
-Every `docs/ja/*.md` must begin with:
-
-```yaml
----
-title: "第N章：日本語タイトル"
-original_title: "Chapter N: English Title"
-author: 'Andrew "bunnie" Huang'
-copyright: "Copyright © 2003 by Xenatera LLC"
-publisher: "No Starch Press"
-source_pdf: "HackingTheXbox_Free.pdf"
-pdf_page_range: "pp. XX–YY"
-printed_page_range: "pp. XX–YY"
-translation_status: draft  # draft | review | verified | final
-license: "CC BY-NC-SA 1.0"
----
-```
-
-`pdf_page_range` = actual PDF page numbers (1-indexed).  
-`printed_page_range` = page numbers printed in the book.
-
-## Review checklist before marking a chapter complete
-
-Before changing `translation_status` from `draft` to `review`:
-
-- [ ] Every paragraph from the source PDF is present in the translation
-- [ ] No paragraphs are summarized or condensed
-- [ ] All figure numbers are preserved; all extracted figures are linked or TODO-marked
-- [ ] All footnotes are translated and placed at end of file
-- [ ] All sidebars and callout boxes are preserved
-- [ ] All part numbers, URLs, hex values, code blocks are verbatim
-- [ ] All technical terms match `glossary.tsv`
-- [ ] Frontmatter `pdf_page_range` and `printed_page_range` are accurate
-- [ ] Attribution block is present in footer
-- [ ] `python3 scripts/validate_links.py` passes with zero errors
-- [ ] No `<!-- TODO -->` comments remain that relate to missing content (placement TODOs for uncertain figure positions are acceptable)
-
-## Chapter map (confirmed from PDF TOC)
-
-| ID | English title | Printed pages | PDF pages |
-|----|---------------|---------------|-----------|
-| prologue | Prologue — README.1ST | 1–14 | 19–32 |
-| ch01 | Chapter 1 — Voiding the Warranty | 15–31 | 33–50 |
-| ch02 | Chapter 2 — Thinking Inside the Box | 33–51 | 51–70 |
-| ch03 | Chapter 3 — Installing a Blue LED | 53–65 | 71–84 |
-| ch04 | Chapter 4 — Building a USB Adapter | 67–72 | 85–92 |
-| ch05 | Chapter 5 — Replacing a Broken Power Supply | 73–88 | 93–108 |
-| ch06 | Chapter 6 — The Best Xbox Game: Security Hacking | 89–102 | 107–120 |
-| ch07 | Chapter 7 — A Brief Primer on Security | 103–120 | 121–138 |
-| ch08 | Chapter 8 — Reverse Engineering Xbox Security | 121–138 | 139–156 |
-| ch09 | Chapter 9 — Sneaking in the Back Door | 139–150 | 157–170 |
-| ch10 | Chapter 10 — More Hardware Projects | 151–162 | 171–180 |
-| ch11 | Chapter 11 — Developing Software for the Xbox | 163–174 | 181–192 |
-| ch12 | Chapter 12 — Caveat Hacker | 175–193 | 193–212 |
-| ch13 | Chapter 13 — Onward! | 195–206 | 213–226 |
-| app-a | Appendix A — Where to Get Your Hacking Gear | 207–210 | 225–230 |
-| app-b | Appendix B — Soldering Techniques | 211–224 | 231–242 |
-| app-c | Appendix C — Getting Into PCB Layout | 225–236 | 243–256 |
-| app-d | Appendix D — Getting Started with FPGAs | 237–248 | 257–266 |
-| app-e | Appendix E — Debugging: Hints and Tips | 249–256 | 267–276 |
-| app-f | Appendix F — Xbox Hardware Reference | 257–280+ | 277–291 |
+**Do NOT use Markdown footnote syntax in this project.** VitePress does not support `[^n]` / `[^n]:` natively (no `markdown-it-footnote` plugin is installed),
