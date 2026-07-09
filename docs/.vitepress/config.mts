@@ -34,6 +34,7 @@ export default defineConfig({
         text: '本文',
         items: [
           { text: '第1章 リバースエンジニアリング入門', link: '/ja/ch01' },
+          { text: '第2章 箱の中で考える', link: '/ja/ch02' },
         ],
       },
       {
@@ -55,11 +56,4 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/YOUR_USERNAME/hacking-the-xbox-ja/edit/main/docs/:path',
-      text: 'このページを編集',
-    },
-  },
-
-  markdown: {
-    lineNumbers: false,
-  },
-})
+      text: 'このページ
