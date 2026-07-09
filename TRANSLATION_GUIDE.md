@@ -182,4 +182,11 @@ Before changing `translation_status` from `draft` to `review`:
 | ch09 | Chapter 9 — Sneaking in the Back Door | 139–150 | 157–170 |
 | ch10 | Chapter 10 — More Hardware Projects | 151–162 | 171–180 |
 | ch11 | Chapter 11 — Developing Software for the Xbox | 163–174 | 181–192 |
-| ch12 | Chapter 12 — Caveat Hacker | 1
+| ch12 | Chapter 12 — Caveat Hacker | 175–193 | 193–212 |
+| ch13 | Chapter 13 — Onward! | 195–206 | 213–226 |
+| app-a | Appendix A — Where to Get Your Hacking Gear | 207–210 | 225–230 |
+| app-b | Appendix B — Soldering Techniques | 211–224 | 231–242 |
+| app-c | Appendix C — Getting Into PCB Layout | 225–236 | 243–256 |
+| app-d | Appendix D — Getting Started with FPGAs | 237–248 | 257–266 |
+| app-e | Appendix E — Debugging: Hints and Tips | 249–256 | 267–276 |
+| app-f | Appendix F — Xbox Hardware Reference | 257–280+ | 277–291 |

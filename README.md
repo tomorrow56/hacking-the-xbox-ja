@@ -74,4 +74,4 @@ See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for full details.
 | Prologue — README.1ST | draft |
 | Chapter 1 — Voiding the Warranty | draft |
 | Chapters 2–13 | not started |
-| Appendices A–F | not started 
+| Appendices A–F | not started |
