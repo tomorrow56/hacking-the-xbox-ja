@@ -1,0 +1,51 @@
+source_term	ja_term	note
+hacker	ハッカー	本書の文脈では「探求者」の意味。クラッカーと混同しないこと
+hacking	ハッキング	探求・改造行為。違法行為としての「クラッキング」とは区別する
+hardware hacking	ハードウェアハッキング	物理的なハードウェアを探求・改造する行為
+cracker	クラッカー	不正アクセスを行う者。ハッカーとは区別する
+reverse engineering	リバースエンジニアリング	完成品から設計・動作原理を解析する行為
+ROM	ROM	Read-Only Memory。英語のまま使用
+FLASH ROM	フラッシュROM	電気的に書き換え可能なROM
+BIOS	BIOS	Basic Input/Output System。英語のまま
+bus	バス	複数の機器間でデータをやり取りする共通の信号線
+Front Side Bus	フロントサイドバス (FSB)	CPUとノースブリッジを結ぶバス
+HyperTransport	HyperTransport	AMD の高速バス技術。固有名詞のため英語表記維持
+soldering	はんだ付け	電子部品を基板に固定する接合技術
+desoldering braid	はんだ吸い取り線	余分なはんだを除去するための銅線の組み紐
+logic analyzer	ロジックアナライザ	デジタル信号を多チャンネルでキャプチャする計測器
+oscilloscope	オシロスコープ	電圧波形を時間軸で表示する計測器
+digital multimeter	デジタルマルチメータ (DMM)	電圧・電流・抵抗などを計測する基本的な計測器
+test point	テストポイント	基板上の計測用パッド
+motherboard	マザーボード	メインの回路基板
+southbridge	サウスブリッジ	低速周辺機器を制御するチップセット
+northbridge	ノースブリッジ	CPU・メモリ・GPUを仲介するチップセット
+DMCA	DMCA	Digital Millennium Copyright Act（デジタルミレニアム著作権法）。英語略称をそのまま使用し、初出時に括弧内で正式名称を日本語訳する
+fair use	フェアユース	著作権法上の正当利用の原則
+circumvention	回避（技術的保護手段の）	DRMなどの技術的保護手段を回避する行為
+interoperability	相互運用性	異なるシステム間でデータ・機能を共有できる能力
+solder	はんだ	低融点合金の接合材料
+flux	フラックス	はんだ付けを助ける化学薬品
+eutectic	共晶	合金が液体から均一な固体へ直接変化する特性
+ESD	ESD	Electro-Static Discharge（静電気放電）。英語略称使用、初出時に正式名称を付記
+torx	トルクス	六角星形のドライバビット規格
+security bit	セキュリティビット	一般的なドライバでは開けられないネジ用のビット
+heat sink	ヒートシンク	熱を放散させる金属部品
+IDE	IDE	Integrated Drive Electronics。英語略称使用
+ribbon cable	リボンケーブル	平型の多芯ケーブル
+FPGA	FPGA	Field Programmable Gate Array。英語略称使用、初出時に括弧内で解説
+Verilog	Verilog	ハードウェア記述言語。固有名詞のため英語表記維持
+PCB	PCB	Printed Circuit Board（プリント回路基板）。英語略称使用
+silkscreen	シルクスクリーン	基板上の白い印刷層（部品名・アウトライン）
+soldermask	ソルダーマスク	はんだの付着を防ぐ保護コーティング
+surface mount	表面実装 (SMD)	部品を基板表面に直接はんだ付けする技術
+closed-console	クローズドコンソール	ゲームソフトを許可制で販売するビジネスモデル
+boot ROM	ブートROM	電源投入時に最初に実行されるファームウェアを格納したROM
+kernel	カーネル	OSの中核プログラム
+encryption	暗号化	データを鍵を使って読めない形式に変換すること
+hash	ハッシュ	データの一方向変換によって得られる固定長の値
+hardware	ハードウェア	物理的な電子部品・機器
+firmware	ファームウェア	ハードウェアに組み込まれたソフトウェア
+bootloader	ブートローダ	OSを起動する前に実行されるプログラム
+security	セキュリティ	安全性・保護の仕組み
+chip	チップ	集積回路（IC）パッケージ
+exploit	エクスプロイト	ソフトウェア・ハードウェアの脆弱性を利用したコードや技法

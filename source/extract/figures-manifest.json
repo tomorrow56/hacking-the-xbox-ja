@@ -1,10 +1,705 @@
 {
-  "_note": "This is a placeholder. Run `python3 scripts/extract_images.py` with the PDF to generate the real manifest.",
   "stats": {
-    "total_pages": null,
-    "images_extracted": 0,
-    "pages_with_images": 0,
-    "errors": []
+    "total_pages": 291,
+    "images_extracted": 34,
+    "pages_with_images": 25,
+    "errors": [
+      {
+        "page": 1,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 1,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 28,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 34,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 41,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 41,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 42,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 43,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 44,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 45,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 45,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 47,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 52,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 53,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 54,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 58,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 59,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 67,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 69,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 73,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 74,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 74,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 75,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 76,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 77,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 78,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 81,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 81,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 82,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 86,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 86,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 88,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 89,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 90,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 97,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 98,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 99,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 100,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 101,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 101,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 102,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 104,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 109,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 116,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 143,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 146,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 147,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 172,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 174,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 185,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 233,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 235,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 236,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 237,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 238,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 238,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 240,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 246,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 271,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 272,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 272,
+        "name": "/Im1",
+        "error": ""
+      },
+      {
+        "page": 273,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 291,
+        "name": "/Im0",
+        "error": ""
+      },
+      {
+        "page": 291,
+        "name": "/Im1",
+        "error": ""
+      }
+    ],
+    "_note": "25 embedded images extracted via pikepdf (mostly decorative/small). 9 figure pages rendered via pypdfium2 at 144dpi for Prologue+Ch01. Remaining chapter figures need page renders; use scripts/extract_images.py --render."
   },
-  "images": []
+  "images": [
+    {
+      "filename": "page-040-img-01.png",
+      "page": 40,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [
+        "Figure 1-2 illustrates",
+        "Figure 1-3 illustrates this procedure. Once you have pried up an",
+        "Figure 1-4 illustrates the location of these screws."
+      ],
+      "docs_path": "/images/page-040-img-01.png"
+    },
+    {
+      "filename": "page-042-img-01.png",
+      "page": 42,
+      "img_index": 1,
+      "width": 95,
+      "height": 117,
+      "captions_on_page": [
+        "Figure 1-4: Location of the screws hidden by the serial number and product",
+        "Figure 1-5 illustrates some of the"
+      ],
+      "docs_path": "/images/page-042-img-01.png"
+    },
+    {
+      "filename": "page-051-img-01.png",
+      "page": 51,
+      "img_index": 1,
+      "width": 95,
+      "height": 117,
+      "captions_on_page": [],
+      "docs_path": "/images/page-051-img-01.png"
+    },
+    {
+      "filename": "page-052-img-01.png",
+      "page": 52,
+      "img_index": 1,
+      "width": 119,
+      "height": 110,
+      "captions_on_page": [
+        "Figure 2-1: Cross-section of a typical circuit board."
+      ],
+      "docs_path": "/images/page-052-img-01.png"
+    },
+    {
+      "filename": "page-057-img-01.png",
+      "page": 57,
+      "img_index": 1,
+      "width": 119,
+      "height": 110,
+      "captions_on_page": [
+        "Figure 2-4 illustrates what you might"
+      ],
+      "docs_path": "/images/page-057-img-01.png"
+    },
+    {
+      "filename": "page-066-img-01.png",
+      "page": 66,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [],
+      "docs_path": "/images/page-066-img-01.png"
+    },
+    {
+      "filename": "page-071-img-01.png",
+      "page": 71,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-071-img-01.png"
+    },
+    {
+      "filename": "page-073-img-01.png",
+      "page": 73,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [
+        "Figure 3-1: Position the disk drives so that the front edge of the motherboard is",
+        "Figure 3-1 illustrates how your Xbox",
+        "Figure 3-2).",
+        "Figure 3-3. A firm, steady force is all the connector should"
+      ],
+      "docs_path": "/images/page-073-img-01.png"
+    },
+    {
+      "filename": "page-078-img-01.png",
+      "page": 78,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [
+        "Figure 3-7 shows how the",
+        "Figure 3-7: Cut the existing LEDs off the circuit card assembly. (Top) cut the",
+        "Figure 3-8 shows how to identify the polarity of"
+      ],
+      "docs_path": "/images/page-078-img-01.png"
+    },
+    {
+      "filename": "page-087-img-01.png",
+      "page": 87,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [
+        "Figure 4-3. Peel the insulation back to",
+        "Figure 4-3.)",
+        "Figure 4-4. Have a friend help you hold the cables in"
+      ],
+      "docs_path": "/images/page-087-img-01.png"
+    },
+    {
+      "filename": "page-092-img-01.png",
+      "page": 92,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [],
+      "docs_path": "/images/page-092-img-01.png"
+    },
+    {
+      "filename": "page-102-img-01.png",
+      "page": 102,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [
+        "Figure 5-7: Location of the two power supply mounting screws."
+      ],
+      "docs_path": "/images/page-102-img-01.png"
+    },
+    {
+      "filename": "page-103-img-01.png",
+      "page": 103,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [
+        "Figure 5-7.)"
+      ],
+      "docs_path": "/images/page-103-img-01.png"
+    },
+    {
+      "filename": "page-107-img-01.png",
+      "page": 107,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-107-img-01.png"
+    },
+    {
+      "filename": "page-123-img-01.png",
+      "page": 123,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-123-img-01.png"
+    },
+    {
+      "filename": "page-167-img-01.png",
+      "page": 167,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-167-img-01.png"
+    },
+    {
+      "filename": "page-181-img-01.png",
+      "page": 181,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-181-img-01.png"
+    },
+    {
+      "filename": "page-184-img-01.png",
+      "page": 184,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-184-img-01.png"
+    },
+    {
+      "filename": "page-231-img-01.png",
+      "page": 231,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [],
+      "docs_path": "/images/page-231-img-01.png"
+    },
+    {
+      "filename": "page-232-img-01.png",
+      "page": 232,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [],
+      "docs_path": "/images/page-232-img-01.png"
+    },
+    {
+      "filename": "page-234-img-01.png",
+      "page": 234,
+      "img_index": 1,
+      "width": 95,
+      "height": 117,
+      "captions_on_page": [],
+      "docs_path": "/images/page-234-img-01.png"
+    },
+    {
+      "filename": "page-235-img-01.png",
+      "page": 235,
+      "img_index": 1,
+      "width": 95,
+      "height": 117,
+      "captions_on_page": [],
+      "docs_path": "/images/page-235-img-01.png"
+    },
+    {
+      "filename": "page-236-img-01.png",
+      "page": 236,
+      "img_index": 1,
+      "width": 125,
+      "height": 112,
+      "captions_on_page": [],
+      "docs_path": "/images/page-236-img-01.png"
+    },
+    {
+      "filename": "page-248-img-01.png",
+      "page": 248,
+      "img_index": 1,
+      "width": 125,
+      "height": 120,
+      "captions_on_page": [],
+      "docs_path": "/images/page-248-img-01.png"
+    },
+    {
+      "filename": "page-271-img-01.png",
+      "page": 271,
+      "img_index": 1,
+      "width": 95,
+      "height": 117,
+      "captions_on_page": [],
+      "docs_path": "/images/page-271-img-01.png"
+    },
+    {
+      "filename": "page-028-render.png",
+      "page": 28,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure (author photo) — 'The author at his workstation.'"
+      ],
+      "docs_path": "/images/page-028-render.png"
+    },
+    {
+      "filename": "page-034-render.png",
+      "page": 34,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-1: A selection of security bits."
+      ],
+      "docs_path": "/images/page-034-render.png"
+    },
+    {
+      "filename": "page-041-render.png",
+      "page": 41,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-2: Location of the Xbox case screws.",
+        "Figure 1-3: Use a small flathead screwdriver to pry up an edge of the Xbox's rubber feet"
+      ],
+      "docs_path": "/images/page-041-render.png"
+    },
+    {
+      "filename": "page-042-render.png",
+      "page": 42,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-4: Location of the screws hidden by the serial number and product certifications labels."
+      ],
+      "docs_path": "/images/page-042-render.png"
+    },
+    {
+      "filename": "page-043-render.png",
+      "page": 43,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-5: Some places where you can pry to work open a stubborn cover."
+      ],
+      "docs_path": "/images/page-043-render.png"
+    },
+    {
+      "filename": "page-044-render.png",
+      "page": 44,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-6: Location of the three drive carrier screws."
+      ],
+      "docs_path": "/images/page-044-render.png"
+    },
+    {
+      "filename": "page-045-render.png",
+      "page": 45,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-6 (continued)",
+        "Figure 1-7: Free the hard drive cable from its retaining notch."
+      ],
+      "docs_path": "/images/page-045-render.png"
+    },
+    {
+      "filename": "page-047-render.png",
+      "page": 47,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-7 (continued)",
+        "Figure 1-8: Position of the disk drives"
+      ],
+      "docs_path": "/images/page-047-render.png"
+    },
+    {
+      "filename": "page-048-render.png",
+      "page": 48,
+      "img_index": "render",
+      "width": 864,
+      "height": 1296,
+      "ext": "png",
+      "type": "page-render",
+      "captions_on_page": [
+        "Figure 1-9: Prying the hard drive power connector off with a flathead screwdriver."
+      ],
+      "docs_path": "/images/page-048-render.png"
+    }
+  ]
 }

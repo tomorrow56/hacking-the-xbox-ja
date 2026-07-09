@@ -1,26 +1,46 @@
 #!/usr/bin/env python3
 """
 validate_links.py
-Check that all image references in docs/ja/*.md point to files that exist
-under docs/public/images/.  Also checks internal markdown links.
+Check that all image references in docs/**/*.md point to files that exist.
+VitePress convention: /images/foo.png  =>  docs/public/images/foo.png
 
 Usage: python3 scripts/validate_links.py
 """
-
 import re
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
-PUBLIC_IMAGES = DOCS_DIR / "public" / "images"
-JA_DIR = DOCS_DIR / "ja"
+# VitePress public directory: files here are served at /
+PUBLIC_DIR = DOCS_DIR / "public"
 
 IMG_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
-LINK_RE = re.compile(r"\[([^\]]+)\]\((/[^)]+)\)")  # absolute-path internal links
+LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\((/[^)#\s]+)")
 
 errors: list[str] = []
 warnings: list[str] = []
+
+
+def resolve_vitepress_path(src: str) -> Path:
+    """Resolve a VitePress URL path to a filesystem path.
+    /images/foo.png -> docs/public/images/foo.png
+    /foo.md         -> docs/foo.md
+    """
+    stripped = src.lstrip("/")
+    # Try public dir first (static assets)
+    public_candidate = PUBLIC_DIR / stripped
+    if public_candidate.exists():
+        return public_candidate
+    # Try as a doc page
+    docs_candidate = DOCS_DIR / stripped
+    if docs_candidate.exists():
+        return docs_candidate
+    docs_md = (DOCS_DIR / stripped).with_suffix(".md")
+    if docs_md.exists():
+        return docs_md
+    # Return the public candidate as the expected path for error reporting
+    return public_candidate
 
 
 def check_file(md_path: Path):
@@ -30,28 +50,22 @@ def check_file(md_path: Path):
     # Image refs
     for alt, src in IMG_RE.findall(text):
         if src.startswith("http"):
-            continue  # external, skip
-        # src could be /images/foo.png  or  ../images/foo.png
-        if src.startswith("/images/"):
-            img_file = PUBLIC_IMAGES / src[len("/images/"):]
-        elif src.startswith("/"):
-            img_file = DOCS_DIR / "public" / src.lstrip("/")
-        else:
-            img_file = (md_path.parent / src).resolve()
-
-        if not img_file.exists():
-            errors.append(f"{rel}: broken image ref '{src}' (not found at {img_file})")
-
-    # Internal markdown links (absolute paths)
-    for text_content, href in LINK_RE.findall(text):
-        # strip anchor
-        href_path = href.split("#")[0]
-        if not href_path:
             continue
-        # VitePress resolves from docs root
-        candidate = DOCS_DIR / href_path.lstrip("/")
-        md_candidate = candidate.with_suffix(".md")
-        if not (candidate.exists() or md_candidate.exists()):
+        if src.startswith("/"):
+            resolved = resolve_vitepress_path(src)
+        else:
+            resolved = (md_path.parent / src).resolve()
+
+        if not resolved.exists():
+            errors.append(f"{rel}: broken image '{src}' (expected at {resolved.relative_to(REPO_ROOT)})")
+
+    # Internal markdown links (absolute paths only)
+    for text_content, href in LINK_RE.findall(text):
+        href_path = href.split("#")[0]
+        if not href_path or href_path.startswith("http"):
+            continue
+        resolved = resolve_vitepress_path(href_path)
+        if not resolved.exists():
             warnings.append(f"{rel}: unresolved link '{href}'")
 
 
@@ -66,9 +80,10 @@ def main():
         print("WARNINGS:")
         for w in warnings:
             print(f"  ⚠  {w}")
+        print()
 
     if errors:
-        print("\nERRORS:")
+        print("ERRORS:")
         for e in errors:
             print(f"  ✗  {e}")
         print(f"\n{len(errors)} error(s) found.")
