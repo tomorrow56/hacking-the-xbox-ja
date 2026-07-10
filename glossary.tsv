@@ -49,3 +49,31 @@ bootloader	ブートローダ	OSを起動する前に実行されるプログラ
 security	セキュリティ	安全性・保護の仕組み
 chip	チップ	集積回路（IC）パッケージ
 exploit	エクスプロイト	ソフトウェア・ハードウェアの脆弱性を利用したコードや技法
+via	ビア	基板の層間を接続する銅充填の穴
+capacitor	キャパシタ（コンデンサ）	電荷としてエネルギーを蓄える受動素子
+resistor	抵抗器	電流を制限・制御する受動素子
+inductor	インダクタ	磁束としてエネルギーを蓄える受動素子
+BGA	BGA	Ball Grid Array。パッケージ下面にボール状のはんだ端子を持つIC実装形式
+transistor	トランジスタ	電気信号を増幅またはスイッチングする能動素子
+opcode	オペコード	CPUが実行する命令を表す数値コード
+assembler	アセンブラ	ニーモニックをマシンコードに変換するプログラム
+disassembler	ディスアセンブラ	マシンコードをニーモニックに逆変換するプログラム
+compiler	コンパイラ	高水準言語をマシンコードに変換するプログラム
+instruction pointer	命令ポインタ (IP)	CPUが現在実行中の命令のアドレスを保持するレジスタ
+program counter	プログラムカウンタ (PC)	命令ポインタの別名
+ALU	ALU	Arithmetic Logic Unit（算術論理演算装置）。CPU内の演算実行ユニット
+cache	キャッシュ	高速な小容量メモリ。CPUとメインメモリの速度差を埋める
+DDR SDRAM	DDR SDRAM	Double Data Rate Synchronous DRAM。クロックの両エッジでデータ転送する高速メモリ
+GPU	GPU	Graphics Processing Unit（グラフィックス処理ユニット）。英語略称使用
+UMA	UMA	Unified Memory Architecture（ユニファイドメモリアーキテクチャ）。CPUとGPUがメモリを共有する方式
+SMC	SMC	System Management Controller（システム管理コントローラ）。Xboxの電源管理用コプロセッサ
+LPC	LPC	Low Pin Count。低ピン数バス規格。レガシー周辺機器の接続に使用
+pipelining	パイプライン処理	複数の命令を並列に処理するCPUの技術
+writeback cache	ライトバックキャッシュ	キャッシュへの書き込みを即座にメインメモリに反映しないキャッシュ方式
+1-T SRAM	1-T SRAM	DRAMセルでSRAMをエミュレートする高速メモリ技術（MoSys社）
+bed of nails tester	ベッドオブネイルズテスター	多数のスプリング式プローブで基板を一斉検査する製造テスト機器
+pogo pin	ポゴピン	スプリング内蔵の接触プローブピン
+NV2A	NV2A	XboxのGPU兼ノースブリッジチップ（nVidia製）
+MCPX	MCPX	Xboxのサウスブリッジチップ（nVidia製）。MCPのXbox専用派生品
+pattern matching	パターンマッチング	既知の設計パターンを認識して回路の機能を推測するリバースエンジニアリング技法
+mnemonic	ニーモニック	オペコードに対応する人間が読みやすいアルファベット略語
