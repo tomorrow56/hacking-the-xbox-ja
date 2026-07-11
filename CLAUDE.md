@@ -102,10 +102,28 @@ for pn in range(start, end+1):  # 0-based for pypdfium2
 ```
 Verify each PNG exists before referencing it in the chapter file.
 
+## Book structure
+
+**Numbered chapters end at Chapter 13.** After Chapter 13, the book continues with
+Appendix A through Appendix F.
+
+- Do **not** create `docs/ja/ch14.md` or `docs/ja/ch15.md`.
+- Appendix files must use the filenames `docs/ja/appendix-a.md` through `docs/ja/appendix-f.md`.
+- Do not refer to appendices as chapters.
+- Appendix translations follow identical rules (figure labels, URLs, credits, validation).
+- Figure labels in appendices use `図A-1`, `図B-2` etc. (not `Figure A-1`).
+
 **Step 6 — Translate**
-Write `docs/ja/chNN.md` using:
-- Frontmatter: `title`, `pdf_page_range`, `printed_page_range`, `translation_status: draft`
-- Chapter content translated per `TRANSLATION_GUIDE.md`
+
+For **chapters** (ch01–ch13), write `docs/ja/chNN.md`:
+- Frontmatter title: `'第N章 タイトル'`
+
+For **appendices** (A–F), write `docs/ja/appendix-X.md`:
+- Frontmatter title: `'付録X タイトル'`
+
+Common rules for both:
+- Frontmatter fields: `title`, `pdf_page_range`, `printed_page_range`, `translation_status: draft`
+- Content translated per `TRANSLATION_GUIDE.md`
 - Figures: use `page-NNN-render.png`; multi-caption rule when 2+ figures share a page
 - Footnotes: inline `<sup>N</sup>` + `## 注` section; no Markdown footnote syntax
 - Canonical `<small>` attribution footer at the bottom
@@ -113,15 +131,32 @@ Write `docs/ja/chNN.md` using:
 - Always write Japanese files with `path.write_bytes(text.encode('utf-8'))` — never the Edit tool
 
 **Step 7 — Update navigation**
-- `docs/.vitepress/config.mts`: add sidebar entry `{ text: '第N章 タイトル', link: '/ja/chNN' }`
-- `docs/index.md`: add chapter link to the chapter list
-- Write both with `write_bytes(content.encode('utf-8'))` after verifying full file length post-write
+
+For chapters: add `{ text: '第N章 タイトル', link: '/ja/chNN' }` to the 本文 sidebar group.
+For appendices: add `{ text: '付録X タイトル', link: '/ja/appendix-X' }` to a 付録 sidebar group.
+Update `docs/index.md` similarly. Write both with `write_bytes(content.encode('utf-8'))`.
 
 **Step 8 — Validate**
 ```
 cd D:\hackingthexbox && python3 scripts/validate_links.py
 ```
-Zero errors required before m
+Zero errors required before marking chapter/appendix complete.
+Run `npm run docs:build` locally on Windows to check VitePress build (cannot run in Linux sandbox).
+
+**Step 9 — Report**
+Report in English only. Do not produce a Japanese-language summary unless the user explicitly asks.
+
+Include:
+- Files changed + line/byte counts
+- PDF page range confirmed
+- Image count extracted
+- validate_links.py output (full)
+- Any deviations from TRANSLATION_GUIDE.md, TODOs, or unresolved issues
+- PowerShell commit command (do not commit yourself); commit message must be in English:
+  ```powershell
+  git add docs/ja/chNN.md docs/.vitepress/config.mts docs/index.md docs/public/images/ source/extract/pages/
+  git commit -m "trans: translate chapter N — Chapter Title (draft)"
+  ```
 
 ## Project skills (Claude Code slash commands)
 
@@ -145,7 +180,8 @@ prose unless the user explicitly requests a separate fix task.
 
 ```bash
 python3 scripts/check_translation_batch.py all        # all chapters
-python3 scripts/check_translation_batch.py 10 15      # range
+python3 scripts/check_translation_batch.py 10 13      # chapter range
+python3 scripts/check_translation_batch.py appendix-a-f  # all appendices
 python3 scripts/validate_links.py
 ```
 
