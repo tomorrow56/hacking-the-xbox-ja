@@ -62,6 +62,7 @@ gtag('config', 'G-E0N88X4QBG');`,
           { text: '第10章 さらなるハードウェアプロジェクト', link: '/ja/ch10' },
           { text: '第11章 Xbox向けソフトウェア開発', link: '/ja/ch11' },
           { text: '第12章 注意せよ、ハッカーよ', link: '/ja/ch12' },
+          { text: '第13章 前進！', link: '/ja/ch13' },
         ],
       },
       {
