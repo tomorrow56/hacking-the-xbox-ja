@@ -40,6 +40,7 @@ export default defineConfig({
           { text: '第3章 青色LEDを取り付ける', link: '/ja/ch03' },
           { text: '第4章 USBアダプタを作る', link: '/ja/ch04' },
           { text: '第5章 壊れた電源を交換する', link: '/ja/ch05' },
+          { text: '第6章 最高のXboxゲーム：セキュリティハッキング', link: '/ja/ch06' },
         ],
       },
       {
