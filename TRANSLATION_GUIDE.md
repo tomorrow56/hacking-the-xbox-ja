@@ -124,10 +124,27 @@ Good (repeated subject removed):
 Good (security / secret):  
 「安価なハードウェアクライアントに委ねられる秘密情報の重要度には、おのずと上限がある。安く大量に配布される機器を完全に守ることは難しい。だからこそ、その内部に置く秘密鍵や保護情報も、「破られたとしても許容できる範囲」に抑えるべきなのだ。」
 
+**Word order — put context/topic first:**
+- Topic/context before predicate: ×「Xを理解することはリバースエンジニアリングにおいて非常に重要だ」→ ○「リバースエンジニアリングにおいて、Xを理解することは非常に重要だ」
+- Short concrete cause first: ×「ペナルティは大きくない。最適化ハードウェアが組み込まれているからだ」→ ○「最適化ハードウェアが組み込まれているから、ペナルティは大きくない」
+- Adverb near what it modifies: ×「次第に多く見ていくうちに」→ ○「多く見ていくうちに、次第に」
+- Fix doubled simile: ×「パイプのように水が流れるように各ステップを通過する」→ ○「パイプの中を水が流れるように各ステップを通過する」
+- Cause/effect flow — put reason first when it aids readability: ×「ブートROMは極めて重要だ。初期化コードが含まれているからだ。」→ ○「ブートROMには初期化コードが含まれているから、リバースエンジニアリング上で極めて重要だ。」
+
 ### First-person pronoun
 Use **「僕」** (not 「私」) for bunnie's first-person narration throughout.
 - "I hack because..." → 「僕がハックするのは……」
 - "my work / my research" → 「僕の仕事」 / 「僕の研究」
+
+### Wording and phrasing
+
+- **Person vs activity:** 「リバースエンジニア」= the person; 「リバースエンジニアリング」= the activity. ×「リバースエンジニアの次の強力なツール」→ ○「リバースエンジニアリングの次の強力なツール」
+- **Flash ROM notation:** Use 「フラッシュROM」. Avoid 「FLASHロム（フラッシュROM）」 or 「FLASHスタイルのメモリ」.
+- **Literal idioms:** Prefer concrete Japanese over literal English idiom. ×「かなり遠くまで到達できる」→ ○「かなりのスキルを獲得できる」
+- **Local energy (capacitors):** Do not translate "local energy" as 「ローカルエネルギー」. Explain function: 「各部品のすぐ近くで一時的に必要になる電荷を供給する」. See `glossary.tsv` entry `local energy`.
+- **Resistor / energy dissipation:** Avoid 「余剰エネルギーを除去する」. Prefer 「余分なエネルギーを熱として逃がす」. See `glossary.tsv` entry `resistor removes excess energy`.
+- **Bed-of-nails tester:** Explain the physical setup; do not use bare 「ベッドオブネイルズテスター」 or 「一斉に探針される」. Good: 「針山のように多数のプローブを並べた検査治具を使い、テストポイントに一斉に接触させて検査する（ベッド・オブ・ネイルズ治具）」. See `glossary.tsv` entry `bed-of-nails tester`.
+- **Abbreviation first use:** Expand on first mention: Japanese term、つまり ABBR（English expansion）. After first mention: abbreviation alone. Example: 「算術論理演算装置、つまり ALU（Arithmetic Logic Unit）」→ 以後「ALU」.
 
 ### Callout boxes
 
@@ -174,6 +191,8 @@ Applies to `details`, `tagline`, `description`, and any other frontmatter string
   <!-- TODO: insert Figure 1-1 — source: PDF page 34 -->
   ```
 - Do not guess which image file corresponds to which figure. Only link images confirmed in `source/extract/figures-manifest.json`.
+- If a chapter references a figure number but no image has been extracted yet, leave the TODO comment and preserve the in-text figure reference.
+- During chapter review, report all figure references that lack a corresponding extracted image file.
 
 ## Footnote handling
 
@@ -212,3 +231,4 @@ Before marking any section complete, verify all 15 items:
 13. PCB terms follow `glossary.tsv` (soldermask → はんだレジスト; trace → 配線; ビア = layer holes only).
 14. Source "sidebar" headings are translated as 「コラム」 or 「囲み記事」, not 「サイドバー」.
 15. Links, YAML, figures, and footnotes are valid; no mojibake or "\ufffd".
+16. Abbreviations are expanded on first mention: Japanese term、つまり ABBR（English expansion）; abbreviation alone after that.
