@@ -48,6 +48,15 @@ features:
 - [第12章 注意せよ、ハッカーよ](/ja/ch12)
 - [第13章 前進！](/ja/ch13)
 
+## 付録
+
+- [付録A ハッキング機器の入手先](/ja/appendix-a)
+- [付録B はんだ付け技術](/ja/appendix-b)
+- [付録C PCBレイアウト入門](/ja/appendix-c)
+- [付録D FPGA入門](/ja/appendix-d)
+- [付録E デバッグ：ヒントとコツ](/ja/appendix-e)
+- [付録F Xboxハードウェアリファレンス](/ja/appendix-f)
+
 ## 協力
 
 誤訳、技術的な不正確さ、図版の抜け、日本語として読みにくい箇所があれば、[GitHub Issue](https://github.com/Nico-Tech-Shenzhen/hacking-the-xbox-ja/issues) で知らせてください。

@@ -66,6 +66,17 @@ gtag('config', 'G-E0N88X4QBG');`,
         ],
       },
       {
+        text: '付録',
+        items: [
+          { text: '付録A ハッキング機器の入手先', link: '/ja/appendix-a' },
+          { text: '付録B はんだ付け技術', link: '/ja/appendix-b' },
+          { text: '付録C PCBレイアウト入門', link: '/ja/appendix-c' },
+          { text: '付録D FPGA入門', link: '/ja/appendix-d' },
+          { text: '付録E デバッグ：ヒントとコツ', link: '/ja/appendix-e' },
+          { text: '付録F Xboxハードウェアリファレンス', link: '/ja/appendix-f' },
+        ],
+      },
+      {
         text: '情報',
         items: [
           { text: 'クレジット・謝辞', link: '/credits' },
