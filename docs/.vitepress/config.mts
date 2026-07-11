@@ -27,6 +27,8 @@ export default defineConfig({
       {
         text: '前書き',
         items: [
+          { text: '読者のみなさんへ', link: '/ja/dear-reader' },
+          { text: '謝辞', link: '/ja/acknowledgments' },
           { text: 'プロローグ', link: '/ja/prologue' },
         ],
       },
