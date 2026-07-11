@@ -172,6 +172,42 @@ VitePress uses YAML for page frontmatter. YAML treats unquoted colons as mapping
 
 This applies to `details`, `tagline`, `description`, and any other frontmatter string field.
 
+### PCB and electronics terminology
+
+Use precise Japanese terms from this list. Never use literal katakana transliterations of English PCB jargon.
+
+| English | Preferred Japanese | Avoid |
+|---------|-------------------|-------|
+| printed circuit board / circuit board | プリント基板 / 基板 | 回路基板（acceptable but prefer 基板 for short references） |
+| trace / copper trace | 配線 / 配線パターン | 銅のトレース; 「トレース」 as a standalone noun for conductors |
+| soldermask | はんだレジスト（soldermask） | ソルダーマスク as the primary term; always show "soldermask" in parentheses on first use |
+| patterned copper | 銅箔の配線パターン / 銅パターン | パターン銅 |
+| fiberglass impregnated with epoxy | エポキシ樹脂を含ませたガラス繊維シート | エポキシを含浸させたガラス繊維 |
+| thin polymer (coating) | 薄い樹脂膜 | ポリマーがコーティングされている |
+| plating (of tin or solder) | めっき | メッキ（katakana is informal and inconsistent） |
+
+**"Signal tracing" vs "circuit traces" — important distinction:**
+- "signal tracing" (following a signal path) → 信号の追跡 / 信号をたどる
+- "circuit trace" (the copper conductor itself) → 配線 / 配線パターン
+- Never use 「トレース」 as a standalone noun for copper conductors.
+
+**Bad/good example — PCB intro paragraph:**
+
+Bad:
+「典型的な電子機器のカバーを外したときに最初に目に入るのが回路基板だ。一般的に緑色や茶色のこの多層構造の銅・ガラス繊維・エポキシのサンドイッチは、そのトレース（配線）の中に正確な回路図のネットリストを含んでいる。言い換えると、トレースをたどることで、各部品がどのように接続されているかを正確に知ることができる。」
+
+Good:
+「典型的な電子機器のカバーを外したときに最初に目に入るのが回路基板（プリント基板）だ。一般に緑色や茶色をしたこの基板は、銅箔・ガラス繊維・エポキシ樹脂を重ねた多層構造であり、その配線パターンの中に正確な回路図のネットリストが刻み込まれている。配線パターンをたどることで、各部品がどのように接続されているかを正確に把握できる。」
+
+**Bad/good example — soldermask paragraph:**
+
+Bad:
+「典型的な回路基板は、エポキシを含浸させたガラス繊維の薄いシートで分離された数層のパターン銅から構成されている。生の回路基板の色は白みがかった色や茶色で銅のトレースが見えるが、ほぼすべての回路基板にはソルダーマスク (soldermask) と呼ばれる薄いポリマーがコーティングされており、回路基板のおなじみの緑色を生み出している。」
+
+Good:
+「典型的なプリント基板は、エポキシ樹脂を含ませたガラス繊維シートで絶縁された、複数層の銅箔の配線パターンから構成されている。生の基板の色は白みがかった色や茶色で配線パターンが見えているが、ほぼすべての基板にははんだレジスト（soldermask）と呼ばれる薄い樹脂膜が塗られており、あの見慣れた緑色を生み出している。」
+
+
 ## Figure and caption handling
 
 - Preserve every figure number exactly as printed: **Figure 1-1**, **Figure 2-3**, etc.
