@@ -125,16 +125,18 @@ Zero errors required before m
 
 ## Project skills (Claude Code slash commands)
 
-Use these skills instead of writing long prompts from scratch.
+Slash commands are registered as thin wrappers in `.claude/commands/*.md`.
+Each wrapper delegates to the matching `.claude/skills/*/SKILL.md` for the full procedure.
 
-| Skill | Purpose |
-|-------|---------|
+| Command | Purpose |
+|---------|---------|
 | `/xbox-translate-batch N` | Translate chapter N (or range N-M) end-to-end |
 | `/xbox-postcheck N` | Review recent chapter(s) without retranslating |
 | `/xbox-full-recheck` | Revalidate all translated chapters against latest rules |
 | `/xbox-rule-update <description>` | Update TRANSLATION_GUIDE.md / glossary.tsv only |
 
-Skills live in `.claude/skills/`. Each SKILL.md contains the full procedure.
+- **Commands** (`.claude/commands/`): concise, register the slash name, delegate to skills.
+- **Skills** (`.claude/skills/`): full step-by-step procedures referenced by commands.
 
 **`/xbox-full-recheck` is review-only.** It must not retranslate or rewrite chapter
 prose unless the user explicitly requests a separate fix task.
