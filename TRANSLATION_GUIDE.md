@@ -70,35 +70,19 @@ The Japanese should sound like a working hacker explaining what he learned, not 
 
 ## Reader-first terminology policy
 
-Use standard Japanese electronics terms. If a term is too specialized for general readers, explain the function first, then give the term.
+Always check `glossary.tsv` first. If a term is missing, add it before translating.
 
-**First mention pattern:** Japanese explanation + formal Japanese term + English term (if useful)  
-**After first mention:** natural Japanese term, no parentheses.
+**Decision rules:**
+- Prefer the reader-first Japanese term from `glossary.tsv`.
+- If a term is obscure for general readers, explain the function first, then give the formal term.
+- **First mention pattern:** Japanese explanation + formal term + English term (if useful)
+- **After first mention:** natural Japanese term, no parentheses.
+- Do not overload sentences with parentheses; prefer "what it does" over literal English noun phrases.
+- Add 「つまり」 or apposition only when genuinely helpful.
+- If a longer translator note is needed, leave a `<!-- TODO: -->` comment.
 
-Do not overload sentences with parentheses. Prefer "what it does" over "what the English noun phrase literally says". Add 「つまり」 or apposition only when genuinely helpful. If a longer translator note is needed, leave a `<!-- TODO: -->` comment; do not insert long explanations into the main text.
-
-| English | Preferred Japanese | Avoid |
-|---------|-------------------|-------|
-| printed circuit board / circuit board | プリント基板 / 基板 | 回路基板 (acceptable; prefer 基板 for short references) |
-| trace / copper trace | 配線 / 配線パターン | 銅のトレース; 「トレース」 as standalone noun for conductors |
-| netlist | 部品同士の接続関係（ネットリスト） | 回路図のネットリスト (unless CAD structure itself is the topic) |
-| soldermask | はんだレジスト（soldermask）first use; then はんだレジスト | ソルダーマスク as primary term |
-| pad / land | ランド / パッド | 開口部 (too abstract) |
-| via | ビア (layer-connecting holes only) | do not use ビア for solder pads |
-| resistor pack / RP | 抵抗アレイ（resistor pack） | 抵抗器パック |
-| patterned copper | 銅箔の配線パターン | パターン銅 |
-| fiberglass impregnated with epoxy | エポキシ樹脂を含ませたガラス繊維シート | エポキシを含浸させたガラス繊維 |
-| thin polymer coating | 薄い樹脂膜 | ポリマーがコーティングされている |
-| plating | めっき | メッキ |
-| parasitics | 寄生成分 | パラサイティクス |
-| decoupling capacitor | デカップリングコンデンサ | — |
-| power plane | 電源プレーン | — |
-| black art | 職人芸 | ブラックアート |
-| intermittent reliability problem | たまにしか再現しない不安定動作や間欠不良 | 断続的な信頼性の問題 |
-| signal tracing (following a path) | 信号の追跡 / 信号をたどる | — |
-
-Good: 「その配線パターンには、部品同士の接続関係、つまりネットリストがそのまま刻み込まれている。」  
-Good: 「部品をはんだ付けするためのランドやパッドだけは、はんだレジストがかからないようになっていて、銅のパターンが露出している。」
+Good (function-first + apposition): 「その配線パターンには、部品同士の接続関係、つまりネットリストがそのまま刻み込まれている。」  
+Good (first-mention → subsequent): 「はんだレジスト（soldermask）と呼ばれる薄い樹脂膜が塗られており……ランドやパッドだけは、はんだレジストがかからないようになっていて、銅のパターンが露出している。」
 
 ## Translation style
 
@@ -219,12 +203,12 @@ Before marking any section complete, verify all 15 items:
 4. No paragraphs, sentences, or footnotes are omitted.
 5. No text is invented; unclear source is marked with a TODO comment.
 6. Unclear pronouns and demonstratives are resolved to explicit nouns.
-7. Technical terms follow the reader-first terminology table.
+7. Technical terms follow `glossary.tsv`; apply the reader-first policy for first mention.
 8. English terms are added only when useful, not for every technical noun.
 9. No unnecessary katakana jargon (パラサイティクス, ブラックアート, etc.).
 10. No stiff phrases such as 「〜と考えることができる」 when direct assertion is better.
 11. No repeated adjacent subjects or locations in consecutive sentences.
 12. Circuit behavior is explained by function or cause/effect, not abstract noun stacks.
-13. PCB terms follow the terminology table (soldermask → はんだレジスト; trace → 配線).
+13. PCB terms follow `glossary.tsv` (soldermask → はんだレジスト; trace → 配線; ビア = layer holes only).
 14. Source "sidebar" headings are translated as 「コラム」 or 「囲み記事」, not 「サイドバー」.
 15. Links, YAML, figures, and footnotes are valid; no mojibake or "\ufffd".
