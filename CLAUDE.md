@@ -121,40 +121,36 @@ Write `docs/ja/chNN.md` using:
 ```
 cd D:\hackingthexbox && python3 scripts/validate_links.py
 ```
-Zero errors required before marking chapter complete.
-Run `npm run docs:build` locally on Windows to check VitePress build (cannot run in Linux sandbox).
+Zero errors required before m
 
-**Step 9 — Report**
-Report in English only. Do not produce a Japanese-language summary unless the user explicitly asks.
+## Project skills (Claude Code slash commands)
 
-Include:
-- Files changed + line/byte counts
-- PDF page range confirmed
-- Image count extracted
-- validate_links.py output (full)
-- Any deviations from TRANSLATION_GUIDE.md, TODOs, or unresolved issues
-- PowerShell commit command (do not commit yourself); commit message must be in English:
-  ```powershell
-  git add docs/ja/chNN.md docs/.vitepress/config.mts docs/index.md docs/public/images/ source/extract/pages/
-  git commit -m "trans: translate chapter N — Chapter Title (draft)"
-  ```
+Use these skills instead of writing long prompts from scratch.
 
-### Allowed files (normal chapter translation)
+| Skill | Purpose |
+|-------|---------|
+| `/xbox-translate-batch N` | Translate chapter N (or range N-M) end-to-end |
+| `/xbox-postcheck N` | Review recent chapter(s) without retranslating |
+| `/xbox-full-recheck` | Revalidate all translated chapters against latest rules |
+| `/xbox-rule-update <description>` | Update TRANSLATION_GUIDE.md / glossary.tsv only |
 
-| File | Purpose |
-|------|---------|
-| `docs/ja/chNN.md` | Chapter translation (create) |
-| `docs/.vitepress/config.mts` | Add sidebar entry |
-| `docs/index.md` | Add chapter link |
-| `source/extract/pages/page-NNN.txt` | Extracted source text (create) |
-| `docs/public/images/page-NNN-render.png` | Page renders (create) |
-| `glossary.tsv` | Add missing stable terms only |
-| `source/chapter-map.json` | Read only; do not edit |
+Skills live in `.claude/skills/`. Each SKILL.md contains the full procedure.
 
-### Forbidden (do not edit without explicit instruction)
+**`/xbox-full-recheck` is review-only.** It must not retranslate or rewrite chapter
+prose unless the user explicitly requests a separate fix task.
 
-- Other `docs/ja/*.md` files not being translated this session
-- `docs/credits.md`
-- `package-lock.json`
-- Any remote push (`git push`)
+### Validation harness
 
+```bash
+python3 scripts/check_translation_batch.py all        # all chapters
+python3 scripts/check_translation_batch.py 10 15      # range
+python3 scripts/validate_links.py
+```
+
+`npm run docs:build` must be run on Windows (cannot run in Linux sandbox).
+
+## Potential future hooks
+
+- **PreToolUse hook**: block `git push` from Claude.
+- **Stop hook**: suggest running `/xbox-postcheck` or `/xbox-full-recheck` after a
+  translation session completes.
