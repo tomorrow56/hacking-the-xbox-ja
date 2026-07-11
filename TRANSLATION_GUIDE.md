@@ -111,6 +111,9 @@ Good (first-mention → subsequent): 「はんだレジスト（soldermask）と
 - Split long English sentences at natural pauses. "and / but / since / while / hence" chains → separate Japanese sentences.
 - **"not because A, but because B"** → 「Aだからではない。Bだからこそ……」
 - **Resolve ambiguous pronouns** from context. 「その」 alone is not enough if the referent is unclear; use the explicit noun.
+- **Subject clarity in long first-person sentences:** Japanese permits subject omission, but do not omit 「僕は」 when a long sentence becomes ambiguous about who is acting. In bunnie's narration, add 「僕は」 at the point where the subject shifts or the sentence becomes hard to follow without it. Goal: clarity, not minimal wording.
+  - ×「何に使えるか、修理できるかどうかも分からなくても、……習慣的に集めている。」
+  - ○「何に使えるか、僕は修理できるかどうかも分からなくても、……習慣的に集めている。」
 - **Replace abstract noun endings with cause/effect.** Prefer 「XするとYが起きやすい」 over 「最も起きやすい問題はYだ」.
 - **Avoid repeated adjacent subjects/locations.** Use 「手始めに」「次に」 or omit repeated context.
 - **"secret" in security contexts** → 「秘密情報」「秘密鍵」or 「保護情報」 — never just 「秘密」.
@@ -140,7 +143,15 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
 
 - **Person vs activity:** 「リバースエンジニア」= the person; 「リバースエンジニアリング」= the activity. ×「リバースエンジニアの次の強力なツール」→ ○「リバースエンジニアリングの次の強力なツール」
 - **Flash ROM notation:** Use 「フラッシュROM」. Avoid 「FLASHロム（フラッシュROM）」 or 「FLASHスタイルのメモリ」.
-- **Literal idioms:** Prefer concrete Japanese over literal English idiom. ×「かなり遠くまで到達できる」→ ○「かなりのスキルを獲得できる」
+- **Literal idioms and stock phrases:** Prefer concrete or natural Japanese over literal English idiom or connective phrase.
+  - Generic idiom: ×「かなり遠くまで到達できる」→ ○「かなりのスキルを獲得できる」
+  - "That said / having said that": ×「それを言っておいて」→ ○「言いたいことはこれだけだ」 or 「とはいえ」
+  - "As with any X / like any X": ×「どんなゲームと同じく」→ ○「どんなゲームとも同じで」 / 「どんなXの場合と同じで」
+  - Do not carry over English connective syntax. Find the Japanese phrase that carries the same rhetorical move.
+- **"Aspiring X" phrasing:** Avoid 「志望するX」 as a literal rendering of "aspiring X".
+  Choose Japanese that describes intention or growth path:
+  - 「Xを目指す人」 / 「Xとして成長したいなら」 / 「Xになりたい人」 / 「Xとして腕を上げたい人」
+  - For direct advice framing: 「Xとして成長したいなら、最も大事なアドバイスは」 (not 「志望するXへの最良のアドバイスは」)
 - **Local energy (capacitors):** Do not translate "local energy" as 「ローカルエネルギー」. Explain function: 「各部品のすぐ近くで一時的に必要になる電荷を供給する」. See `glossary.tsv` entry `local energy`.
 - **Resistor / energy dissipation:** Avoid 「余剰エネルギーを除去する」. Prefer 「余分なエネルギーを熱として逃がす」. See `glossary.tsv` entry `resistor removes excess energy`.
 - **Bed-of-nails tester:** Explain the physical setup; do not use bare 「ベッドオブネイルズテスター」 or 「一斉に探針される」. Good: 「針山のように多数のプローブを並べた検査治具を使い、テストポイントに一斉に接触させて検査する（ベッド・オブ・ネイルズ治具）」. See `glossary.tsv` entry `bed-of-nails tester`.
