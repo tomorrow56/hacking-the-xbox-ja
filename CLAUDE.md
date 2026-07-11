@@ -4,7 +4,7 @@
 
 1. **Always read `TRANSLATION_GUIDE.md` before any translation work.**
 2. **Always consult `glossary.tsv` before translating technical terms.**
-3. **Work and report in English** to reduce token usage. Japanese is required only for translated content and public-facing Japanese pages (`docs/ja/`, `docs/index.md`).
+3. **Work and report in English** to reduce token usage. Japanese is required only for translated book content and public-facing Japanese pages (`docs/ja/`, `docs/index.md`). See **§ Operational language** below for the full rule.
 4. **Never push** to any remote unless explicitly instructed by the user.
 5. **Do not call a chapter complete** unless all of the following are done:
    - Source PDF text extracted and stored in `source/extract/pages/`
@@ -16,6 +16,44 @@
 6. **Do not re-state the full guide in reports.** Only report deviations from the guide, TODOs, errors, and quantitative results (page counts, image counts, validation output).
 7. **The PDF is local only** at `source/HackingTheXbox_Free.pdf`. Never attempt to download it from the internet.
 8. **Use pdfplumber for text extraction** and `pikepdf` or `pypdfium2` for image extraction (PyMuPDF/fitz is not installed in this environment).
+
+## Operational language
+
+Use **English** for all workflow and development operations. This reduces token usage and keeps operational output unambiguous.
+
+**Always English:**
+- Claude reports, progress summaries, and explanations of changed files
+- Validation and build result summaries
+- Suggested commit messages and actual git commit messages
+- Branch names, PR titles, and PR descriptions
+- TODO comments that are not reader-facing
+- Internal notes about source page ranges, figures, validation, and build results
+
+**Always Japanese:**
+- Translated book content (`docs/ja/*.md`)
+- Japanese reader-facing site text (homepage, credits, nav labels)
+- Japanese captions and headings inside translated pages
+- Japanese examples that intentionally belong in the translation
+
+**Commit messages must be in English.**
+
+Good:
+```
+trans: add Chapter 9 Japanese translation (draft)
+fix: standardize Japanese figure labels
+guide: update operational language rules
+docs: update credit footer links
+fix: repair VitePress config string literal
+```
+
+Bad (do not use Japanese in commit messages):
+```
+第8章の日本語訳を追加
+図表記を修正
+翻訳ルールを更新
+```
+
+Do not produce Japanese operational summaries unless the user explicitly asks for them.
 
 ## Standard chapter translation workflow
 
@@ -87,16 +125,18 @@ Zero errors required before marking chapter complete.
 Run `npm run docs:build` locally on Windows to check VitePress build (cannot run in Linux sandbox).
 
 **Step 9 — Report**
-Report in English only. Include:
+Report in English only. Do not produce a Japanese-language summary unless the user explicitly asks.
+
+Include:
 - Files changed + line/byte counts
 - PDF page range confirmed
 - Image count extracted
 - validate_links.py output (full)
 - Any deviations from TRANSLATION_GUIDE.md, TODOs, or unresolved issues
-- PowerShell commit command (do not commit yourself):
+- PowerShell commit command (do not commit yourself); commit message must be in English:
   ```powershell
   git add docs/ja/chNN.md docs/.vitepress/config.mts docs/index.md docs/public/images/ source/extract/pages/
-  git commit -m "feat: translate chapter N — チャプタータイトル (draft)"
+  git commit -m "trans: translate chapter N — Chapter Title (draft)"
   ```
 
 ### Allowed files (normal chapter translation)
