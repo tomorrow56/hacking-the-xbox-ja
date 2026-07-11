@@ -1,17 +1,14 @@
-# Hacking the Xbox — 非公式日本語訳
+# Hacking the Xbox — 日本語訳
 
 公開サイトはこちら：  
 **https://nico-tech-shenzhen.github.io/hacking-the-xbox-ja/**
 
-This repository hosts an unofficial Japanese translation site for  
-*Hacking the Xbox: An Introduction to Reverse Engineering*  
-by Andrew "bunnie" Huang.
+This repository hosts a Japanese translation of Andrew "bunnie" Huang's *Hacking the Xbox*, published under CC BY-NC-SA 1.0.
+The author has confirmed that translation is allowed under the Creative Commons license.
+This is not a publisher-issued official Japanese edition.
 
 読むだけなら、npm install やローカルビルドは不要です。  
 GitHub Pages の公開サイトを開けば、そのまま読めます。
-
-**This is an UNOFFICIAL, NONCOMMERCIAL fan translation (非公式日本語訳).**  
-**Not endorsed by the author, Xenatera LLC, or No Starch Press.**
 
 ---
 

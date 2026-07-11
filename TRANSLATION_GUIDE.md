@@ -17,18 +17,20 @@ The Japanese translation is also released under **CC BY-NC-SA 1.0**.
 
 ## Attribution requirements (mandatory in every chapter file)
 
-Every `docs/ja/*.md` file must include the following in its frontmatter AND in a visible footer block:
+Every `docs/ja/*.md` file must include the following visible footer `<small>` block:
 
-```
-原著: Hacking the Xbox: An Introduction to Reverse Engineering
-著者: Andrew "bunnie" Huang
-著作権: Copyright © 2003 by Xenatera LLC
-出版: No Starch Press
-ライセンス: CC BY-NC-SA 1.0
-本翻訳: 非公式日本語訳（unofficial Japanese translation）
+```html
+<small>
+*原著*: *Hacking the Xbox: An Introduction to Reverse Engineering* © 2003 Xenatera LLC<br>
+*著者*: Andrew "bunnie" Huang | *出版*: No Starch Press<br>
+*本翻訳*: 日本語訳 — CC BY-NC-SA 1.0<br>
+*翻訳*: TAKASU Masakazu（@tks） — https://takasumasakazu.net<br>
+*注記*: 著者より、Creative Commons ライセンスに基づく翻訳可の確認を受けています。出版社による公式日本語版ではありません。
+</small>
 ```
 
-Never use the phrases "公式日本語版", "公認翻訳", or "正規翻訳". Always use "非公式日本語訳".
+Never use the phrases "公式日本語版", "公認翻訳", or "正規翻訳".
+Do not describe the translation as "非公式日本語訳" — the author confirmed translation is permitted under CC BY-NC-SA 1.0. Use "日本語訳" instead.
 
 ## Translation style
 
