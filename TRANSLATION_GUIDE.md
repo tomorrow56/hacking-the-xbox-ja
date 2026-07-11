@@ -335,7 +335,7 @@ If page-level attribution is necessary, use the canonical `<small>` footer at th
 
 ## LLM translation checklist
 
-Before marking any section complete, verify all 15 items:
+Before marking any section complete, verify all 21 items:
 
 1. Japanese reader can understand the point without decoding English syntax.
 2. bunnie's voice feels direct, practical, hacker-like, and essay-like.
@@ -352,8 +352,8 @@ Before marking any section complete, verify all 15 items:
 13. PCB terms follow `glossary.tsv` (soldermask → はんだレジスト; trace → 配線; ビア = layer holes only).
 14. Source "sidebar" headings are translated as 「コラム」 or 「囲み記事」, not 「サイドバー」.
 15. Links, YAML, figures, and footnotes are valid; no mojibake or "\ufffd".
-17. No bare URLs directly followed by Japanese text; all such URLs use explicit `[url](url)` Markdown syntax.
-16. Abbreviations are expanded on first mention: Japanese term、つまり ABBR（English expansion）; abbreviation alone after that.
+16. No bare URLs directly followed by Japanese text; all such URLs use explicit `[url](url)` Markdown syntax.
+17. Abbreviations are expanded on first mention: Japanese term、つまり ABBR（English expansion）; abbreviation alone after that.
 18. No English emphasis markers (NOT, ONLY, etc.) left in Japanese text; emphasis expressed with 「必ず」 or equivalent natural Japanese.
 19. No duplicated heading/title fragments from OCR/extraction artifacts; quoted chapter titles verified against source/chapter-map.json.
 20. Bit/byte units accurate (Mbit ≠ MB); byte equivalent added on first mention of flash capacity.
