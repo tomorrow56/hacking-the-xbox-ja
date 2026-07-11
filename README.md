@@ -30,8 +30,6 @@ See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for full details.
 
 ## Translation status
 
-## Translation status
-
 | Section | Status |
 |---------|--------|
 | Dear Reader | translated / review ongoing |
