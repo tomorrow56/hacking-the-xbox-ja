@@ -23,14 +23,14 @@ Every `docs/ja/*.md` file must include the following visible footer `<small>` bl
 <small>
 *原著*: *Hacking the Xbox: An Introduction to Reverse Engineering* © 2003 Xenatera LLC<br>
 *著者*: Andrew "bunnie" Huang | *出版*: No Starch Press<br>
-*本翻訳*: 有志による日本語訳 — CC BY-NC-SA 1.0<br>
-*翻訳*: TAKASU Masakazu（@tks） — https://takasumasakazu.net<br>
-*注記*: 本翻訳は、原著の Creative Commons ライセンス条件に従って公開するコントリビューションであり、著者 bunnie からも歓迎のコメントをいただいています。出版社による公式日本語版ではありません。
+*本翻訳*: 高須正和による日本語訳 — CC BY-NC-SA 1.0<br>
+*翻訳・連絡先*: 高須正和 / TAKASU Masakazu（@tks） — https://takasumasakazu.net<br>
+*注記*: 本翻訳は、原著の Creative Commons ライセンス条件に従って公開する翻訳コントリビューションであり、著者 bunnie からも歓迎のコメントをいただいています。出版社による公式日本語版ではありません。
 </small>
 ```
 
 Never use the phrases "公式日本語版", "公認翻訳", or "正規翻訳".
-Do not describe the translation as "非公式日本語訳". Use "有志による日本語訳" — the author has welcomed this translation contribution.
+Do not describe the translation as "非公式日本語訳". Use "高須正和による日本語訳" — the author has welcomed this translation contribution.
 
 ## Translation style
 

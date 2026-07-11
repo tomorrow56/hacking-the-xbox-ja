@@ -21,12 +21,12 @@
 
 ## 翻訳プロジェクト
 
-本翻訳は有志による日本語訳コントリビューションです。翻訳者は原著の権利を主張しません。
+本翻訳は高須正和による日本語訳コントリビューションです。翻訳者は原著の権利を主張しません。
 
 本翻訳に対して適切なクレジット表示を行う場合は、以下のようにしてください：
 
-> *Hacking the Xbox* 有志による日本語訳 — 原著: Andrew "bunnie" Huang (Xenatera LLC / No Starch Press, 2003)、
-> 翻訳: TAKASU Masakazu（@tks）、ライセンス: CC BY-NC-SA 1.0
+> *Hacking the Xbox* 高須正和による日本語訳 — 原著: Andrew "bunnie" Huang (Xenatera LLC / No Starch Press, 2003)、
+> 翻訳: 高須正和 / TAKASU Masakazu（@tks） — https://takasumasakazu.net、ライセンス: CC BY-NC-SA 1.0
 
 ## 原著 Acknowledgments（著者謝辞）
 
