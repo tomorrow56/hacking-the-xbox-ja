@@ -23,8 +23,7 @@ Every `docs/ja/*.md` file must include the following visible footer `<small>` bl
 <small>
 *原著*: *Hacking the Xbox: An Introduction to Reverse Engineering* © 2003 Xenatera LLC<br>
 *著者*: Andrew "bunnie" Huang | *出版*: No Starch Press<br>
-*本翻訳*: ニコ技深圳コミュニティ / 高須正和による日本語訳 — CC BY-NC-SA 1.0<br>
-*翻訳・レビュー*: ニコ技深圳コミュニティ / 高須正和（@tks） — https://takasumasakazu.net<br>
+*日本語訳・レビュー*: ニコ技深圳コミュニティ / 高須正和（@tks） — https://takasumasakazu.net — CC BY-NC-SA 1.0<br>
 *注記*: 本翻訳は、原著の Creative Commons ライセンス条件に従って公開する翻訳コントリビューションであり、著者 bunnie からも歓迎のコメントをいただいています。出版社による公式日本語版ではありません。
 </small>
 ```
@@ -161,6 +160,11 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - For instruments, use the full name on first mention: 「オシロスコープ」 not 「スコープ」 alone; 「ロジックアナライザ」 not 「アナライザ」 alone.
   - Good: 「中古・ジャンク機材が集まるスワップフェストは、古いオシロスコープやロジックアナライザを安く手に入れる絶好の場所だ。」
   - Bad: 「スワップフェストは古いスコープやアナライザを安く手に入れる絶好の場所だ。」
+
+- **Alligator clip / third hand tool:** Prefer the standard Japanese electronics term over English-derived katakana when a native term exists.
+  - Use **ワニ口クリップ** for "alligator clip". Avoid 「アリゲータークリップ」 unless the source is specifically discussing the English term itself.
+  - For the soldering aid with clips, use 「ワニ口クリップ付きの「第三の手」ツール」. Avoid 「アリゲータークリップ付き」.
+  - General principle: if a widely used Japanese electronics term exists (e.g., ワニ口クリップ、ハンダごて、など), prefer it over a literal katakana rendering of the English.
 
 
 ### Callout boxes
