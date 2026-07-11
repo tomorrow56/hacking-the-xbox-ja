@@ -1,14 +1,21 @@
 # Hacking the Xbox — 日本語訳
 
-公開サイトはこちら：  
-**https://nico-tech-shenzhen.github.io/hacking-the-xbox-ja/**
+## 読む
 
-This repository hosts a Japanese translation of Andrew "bunnie" Huang's *Hacking the Xbox*, published under CC BY-NC-SA 1.0.
-The author has confirmed that translation is allowed under the Creative Commons license.
-This is not a publisher-issued official Japanese edition.
-Translation: ニコ技深圳コミュニティ / 高須正和 / TAKASU Masakazu（@tks） — https://takasumasakazu.net
+日本語訳はこちらから読めます：
 
-読むだけなら、npm install やローカルビルドは不要です。  
+https://takasumasakazu.net/hacking-the-xbox-ja/
+
+## この翻訳について
+
+本リポジトリは、Andrew "bunnie" Huang 著 *Hacking the Xbox: An Introduction to Reverse Engineering* の日本語訳プロジェクトです。
+
+原著は Creative Commons BY-NC-SA 1.0 ライセンスで公開されており、本翻訳もその条件に従って公開しています。出版社による公式日本語版ではありません。
+
+## フィードバック歓迎
+
+誤訳、技術的な不正確さ、日本語として読みにくい箇所、図版の抜けなどがあれば、Issueで知らせてください。
+
 GitHub Pages の公開サイトを開けば、そのまま読めます。
 
 ---
@@ -23,11 +30,20 @@ See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for full details.
 
 ## Translation status
 
+## Translation status
+
 | Section | Status |
 |---------|--------|
-| Prologue — README.1ST | draft |
-| Chapter 1 — Voiding the Warranty | draft |
-| Chapters 2–13 | not started |
+| Dear Reader | translated / review ongoing |
+| Acknowledgments | translated / review ongoing |
+| Prologue — README.1ST | translated / review ongoing |
+| Chapter 1 — Voiding the Warranty | translated / review ongoing |
+| Chapter 2 — Thinking Inside the Box | translated / review ongoing |
+| Chapter 3 — Installing a Blue LED | translated / review ongoing |
+| Chapter 4 | translated / review ongoing |
+| Chapter 5 | translated / review ongoing |
+| Chapter 6 | translated / review ongoing |
+| Chapters 7–13 | not started |
 | Appendices A–F | not started |
 
 ---
@@ -71,3 +87,5 @@ npm run docs:build
 A GitHub Actions workflow is at `.github/workflows/deploy.yml`. It runs automatically on every push to `main`.
 
 To enable GitHub Pages: repo Settings → Pages → Source: GitHub Actions.
+
+
