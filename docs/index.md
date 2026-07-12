@@ -48,11 +48,6 @@ features:
 - [第12章 注意せよ、ハッカーよ](/ja/ch12)
 - [第13章 前進！](/ja/ch13)
 
-## この翻訳プロジェクトについて
-
-- [翻訳にもCI/CDを──『Hacking the Xbox』日本語版で試していること（高須正和）](/translation-ci-cd)
-- [翻訳ガイド](https://github.com/Nico-Tech-Shenzhen/hacking-the-xbox-ja/blob/main/TRANSLATION_GUIDE.md)
-
 ## 付録
 
 - [付録A ハッキング機器の入手先](/ja/appendix-a)
@@ -61,6 +56,11 @@ features:
 - [付録D FPGA入門](/ja/appendix-d)
 - [付録E デバッグ：ヒントとコツ](/ja/appendix-e)
 - [付録F Xboxハードウェアリファレンス](/ja/appendix-f)
+
+## この翻訳プロジェクトについて
+
+- [翻訳にもCI/CDを──『Hacking the Xbox』日本語版で試していること（高須正和）](/translation-ci-cd)
+- [翻訳ガイド](https://github.com/Nico-Tech-Shenzhen/hacking-the-xbox-ja/blob/main/TRANSLATION_GUIDE.md)
 
 ## 協力
 
