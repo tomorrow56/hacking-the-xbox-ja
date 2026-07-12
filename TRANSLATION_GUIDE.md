@@ -59,7 +59,7 @@ The Japanese should sound like a working hacker explaining what he learned, not 
 |-------|--------|
 | 「〜と考えることができる」 | 「〜だ」（assert directly） |
 | 「〜に慰めを見出せる」 | 「〜ものだ」/「〜は救いだ」 |
-| 「断続的な信頼性の問題」 | 「たまにしか再現しない不安定動作や間欠不良」 |
+| 「断続的な信頼性の問題」「断続的な動作不良」 | 「たまにしか再現しない不安定動作や間欠不良」 |
 | 「〜に基づいて機能を推測する」 | 「〜を見て機能を推測する」 |
 | 「〜することも助けになる」 | 「〜してみるといい」 |
 | 「最も起きやすい問題は〜だ」 | 「〜が起きやすい」 |
@@ -106,12 +106,14 @@ Good (first-mention → subsequent): 「はんだレジスト（soldermask）と
   - PlayStation: choose one project-wide convention. Prefer **PlayStation** when product-line branding consistency matters; プレイステーション is acceptable in running prose. Document the choice in `glossary.tsv` and keep it consistent throughout.
   - If an official brand spelling is central to the technical context (e.g., an exact product model name), preserve the official English spelling.
   - If both Japanese and English forms appear across existing chapters, standardize on the glossary convention.
+  - **Proper noun rules apply to all translated content**, including interview profiles and biographical sidebars — not only narrator prose. Exception: verbatim attributed quotations where the speaker's original words must be preserved exactly.
 - US Code citations (e.g., `17 U.S.C § 1201(f)`)
 - Footnote numbers (preserve as superscripts)
 
 ### Numbers and units
 
 - **Unit spacing:** Insert a space between a numeral and its SI unit symbol: `133 MHz`, `400 MB/s`, `1.5 V`, `8 mA`, `50 mV`. Do not write `133MHz` or `400MB/s`. Applies to body text and captions; code blocks and command listings are exempt.
+- **Incomplete unit symbols:** The prefix `µ` alone is not a unit. For process geometry measurements, always write `µm` (micrometre): `0.13 µm プロセス`, not `0.13µプロセス`.
 
 ### Sentence construction
 
@@ -142,6 +144,7 @@ Good (security / secret):
 - Adverb near what it modifies: ×「次第に多く見ていくうちに」→ ○「多く見ていくうちに、次第に」
 - Fix doubled simile: ×「パイプのように水が流れるように各ステップを通過する」→ ○「パイプの中を水が流れるように各ステップを通過する」
 - Cause/effect flow — put reason first when it aids readability: ×「ブートROMは極めて重要だ。初期化コードが含まれているからだ。」→ ○「ブートROMには初期化コードが含まれているから、リバースエンジニアリング上で極めて重要だ。」
+- **Legal-register sentences (DMCA, copyright paraphrase):** When paraphrasing legal language, split into two sentences: (1) state the factual condition or provision; (2) state the legal conclusion or implication. English legal clauses chain multiple sub-conditions into one sentence; Japanese readers need them separated for clarity.
 
 ### First-person pronoun
 Use **「僕」** (not 「私」) for bunnie's first-person narration throughout.
@@ -160,6 +163,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - **"nifty hack"**: Do not transliterate as ニッティハック。Render as 気の利いた小技, 気の利いたハック, or 小粋なハック depending on tone.
   - **Punchline / irony sentences**: When English piles up a list of examples before a punchline, split into separate Japanese sentences so the punchline lands. Do not carry English example-chains mechanically into a single Japanese sentence.
   - **Awkward English idioms (e.g. "sack of rice")**: Preserve the joke only if it can be made naturally readable in Japanese. 米袋 is acceptable when the irony is clear; rephrase or omit if the literal image causes confusion rather than humor.
+  - **Cultural slang as technical metaphor:** When English slang encodes a function Japanese readers may not recognise (e.g., "green paper" = money/bribery, "rubber hose" = physical coercion), state the Japanese function first, then add the English term in parentheses: `現金による贈賄（いわゆる「グリーンペーパー」）`, not `グリーンペーパー（贈賄）`.
 - **"Aspiring X" phrasing:** Avoid 「志望するX」 as a literal rendering of "aspiring X".
   Choose Japanese that describes intention or growth path:
   - 「Xを目指す人」 / 「Xとして成長したいなら」 / 「Xになりたい人」 / 「Xとして腕を上げたい人」
@@ -176,6 +180,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
 - **Resistor / energy dissipation:** Avoid 「余剰エネルギーを除去する」. Prefer 「余分なエネルギーを熱として逃がす」. See `glossary.tsv` entry `resistor removes excess energy`.
 - **Bed-of-nails tester:** Explain the physical setup; do not use bare 「ベッドオブネイルズテスター」 or 「一斉に探針される」. Good: 「針山のように多数のプローブを並べた検査治具を使い、テストポイントに一斉に接触させて検査する（ベッド・オブ・ネイルズ治具）」. See `glossary.tsv` entry `bed-of-nails tester`.
 - **Abbreviation first use:** Expand on first mention: Japanese term、つまり ABBR（English expansion）. After first mention: abbreviation alone. Example: 「算術論理演算装置、つまり ALU（Arithmetic Logic Unit）」→ 以後「ALU」.
+- **"field programmable" in acronym expansions:** Use **フィールドプログラマブル** (established electronics katakana), not `現場でプログラム可能な` (literal). Correct: `FPGA（フィールドプログラマブルゲートアレイ、Field Programmable Gate Array）`.
 - **Culturally specific hobby/event terms (swapfest, swap meet):** Explain on first mention; do not leave bare katakana without context.
   - 「swapfest」/「swap meet」: explain as 「中古・ジャンク機材が集まる交換市」 on first mention, then use 「スワップフェスト」.
   - For instruments, use the full name on first mention: 「オシロスコープ」 not 「スコープ」 alone; 「ロジックアナライザ」 not 「アナライザ」 alone.
@@ -191,6 +196,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - For safety instructions use 「必ず」, 「絶対に」, or 「忘れずに」 depending on severity.
   - ×「コンセントからNOT抜いてあること」→ ○「コンセントから「必ず」抜いてあること」
   - Do not mechanically carry over English emphasis markers into Japanese prose.
+  - The same principle applies to any English word appearing capitalized mid-sentence in Japanese prose (e.g., `Accept`, `Connect`, `Ready`): replace with natural Japanese verbs — `受け付ける`, `接続する`, `準備完了になる`.
 
 - **errata / workaround:**
   - Spell **エラッタ**, not エラータ. エラータ is a common mispronunciation; avoid it.
@@ -199,6 +205,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - For book correction lists (printed corrections), prefer 正誤表.
   - Prefer **回避策** over ワークアラウンド.
   - When describing ordinary user or device conditions, prefer **通常の使用条件** over 通常の動作条件 unless the technical context specifically requires the latter.
+- **"premature" in technical / security contexts:** Use **早期の** or **時期尚早の**. Do not use the katakana `プリマチュア` — it is not established Japanese technical vocabulary. Example: `早期アンマップ攻撃`, not `プリマチュア・アンマップ攻撃`.
 
 - **"signaling" in electronics contexts:**  
   Do not leave シグナリング in Japanese prose. Choose based on sentence context:
@@ -210,6 +217,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - LVDS: expand on first use as LVDS（低電圧差動信号）. AGTL+ and SST-2: keep source ASCII spelling; AGTL+ uses ASCII `+`, not full-width ＋.
   - Blind replacement of シグナリング is a valid first pass; review each sentence individually — "signaling" sometimes means the signal itself and sometimes the convention or method.
   - When defining 信号規格 inline, avoid circular definitions that repeat 規格 in both the headword and its parenthetical gloss. Put function first: 「電圧をどの論理値に対応させるかを定めた規格を、信号規格という」. Avoid 「特定の標準」 as a loan translation of "a particular standard/convention".
+  - Bare **シグナル** used for a named electrical signal line (Power OK, Power On, etc.) should also use 「信号」: write `Power OK信号`、`Power On信号`, not `Power OKシグナル`.
 
 - **Technical classification sentences:** When classifying a set of technical categories, prefer 「〜に分けられる」 over 「〜カテゴリがある」 or 「〜種類がある」.
   - ×「信号方式には大きく分けて二つのカテゴリがある——A と B だ」
@@ -240,6 +248,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - ○「8 mAの電流をソース／シンクできる」
 
 - **spare / empty footprint:** Do not use 「スペアフットプリント」. Render as 「未実装のフットプリント」 (unpopulated mounting area reserved for a component) or 「空のフットプリント」 (physically empty pad). See `glossary.tsv` entry `footprint`.
+- **"fiducial mark" (PCB alignment marks):** Use **フィデューシャルマーク（基準マーク）**. Do NOT use `フィデューシャリ` — "fiduciary" is an unrelated legal/financial term. The PCB term is "fiducial" (alignment reference mark), not "fiduciary".
 
 - **Duplicated heading/title fragments (OCR/extraction artifacts):** Watch for artifacts where a heading, chapter title, or quoted title is duplicated inside itself.
   - Verify suspicious quoted titles against `source/chapter-map.json` or the source extract before changing.
@@ -449,7 +458,7 @@ If page-level attribution is necessary, use the canonical `<small>` footer at th
 
 ## LLM translation checklist
 
-Before marking any section complete, verify all 24 items:
+Before marking any section complete, verify all 26 items:
 
 1. Japanese reader can understand the point without decoding English syntax.
 2. bunnie's voice feels direct, practical, hacker-like, and essay-like.
@@ -473,5 +482,7 @@ Before marking any section complete, verify all 24 items:
 20. Bit/byte units accurate (Mbit ≠ MB); byte equivalent added on first mention of flash capacity.
 21. No credit/license blockquote under any chapter title; attribution is in the bottom `<small>` footer only.
 22. No English figure labels (`Figure N-M`) in visible Japanese prose or captions; all must be `図N-M`. Verified with `rg "Figure [0-9]+-[0-9]+" docs/ja/chNN.md` — only alt text, filenames, HTML comments, and intentional quotations are exempt.
-23. Number-unit spacing: SI unit symbols are preceded by a space throughout body text and captions (133 MHz not 133MHz; 8 mA not 8mA). Spot-check with `rg '[0-9][A-Za-z]' docs/ja/chNN.md`.
+23. Number-unit spacing: SI unit symbols are preceded by a space throughout body text and captions (133 MHz not 133MHz; 8 mA not 8mA). Check that `µ` is not used alone as a unit — write `µm` for micrometres (`0.13 µm プロセス` not `0.13µプロセス`). Spot-check with `rg '[0-9][A-Za-zµ]' docs/ja/chNN.md`.
 24. 実装 not used for physical component mounting; 取り付ける / 載せる used for physical attachment to a board.
+25. `フィデューシャリ` not used for PCB alignment marks; `フィデューシャルマーク（基準マーク）` used instead. ("Fiduciary" is a legal/financial term, not a PCB term.)
+26. No bare `シグナル` for named electrical signals in prose; `信号` used consistently (`Power OK信号`, `Power On信号`).
