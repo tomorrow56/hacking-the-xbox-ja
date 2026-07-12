@@ -100,6 +100,12 @@ Good (first-mention → subsequent): 「はんだレジスト（soldermask）と
 - URLs
 - Figure numbers in alt text and English source references (e.g., `Figure 1-1`, `Table 2-1`); visible Japanese labels use `図N-M` — see **Figure and caption handling** below
 - Product names, company names, brand names (e.g., Xbox, Weller WTCPT, Kester 24-6337-8802)
+- **Japanese-origin vs Western-origin proper nouns (game consoles, companies):**
+  - Japanese-origin game consoles, game companies, and game titles: use established Japanese names in prose (ドリームキャスト, セガ, 任天堂, ソニー).
+  - Xbox stays **Xbox** (not エックスボックス). Microsoft, Intel, AMD, NVIDIA: keep English.
+  - PlayStation: choose one project-wide convention. Prefer **PlayStation** when product-line branding consistency matters; プレイステーション is acceptable in running prose. Document the choice in `glossary.tsv` and keep it consistent throughout.
+  - If an official brand spelling is central to the technical context (e.g., an exact product model name), preserve the official English spelling.
+  - If both Japanese and English forms appear across existing chapters, standardize on the glossary convention.
 - US Code citations (e.g., `17 U.S.C § 1201(f)`)
 - Footnote numbers (preserve as superscripts)
 
@@ -147,10 +153,21 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - "That said / having said that": ×「それを言っておいて」→ ○「言いたいことはこれだけだ」 or 「とはいえ」
   - "As with any X / like any X": ×「どんなゲームと同じく」→ ○「どんなゲームとも同じで」 / 「どんなXの場合と同じで」
   - Do not carry over English connective syntax. Find the Japanese phrase that carries the same rhetorical move.
+  - **"nifty hack"**: Do not transliterate as ニッティハック。Render as 気の利いた小技, 気の利いたハック, or 小粋なハック depending on tone.
+  - **Punchline / irony sentences**: When English piles up a list of examples before a punchline, split into separate Japanese sentences so the punchline lands. Do not carry English example-chains mechanically into a single Japanese sentence.
+  - **Awkward English idioms (e.g. "sack of rice")**: Preserve the joke only if it can be made naturally readable in Japanese. 米袋 is acceptable when the irony is clear; rephrase or omit if the literal image causes confusion rather than humor.
 - **"Aspiring X" phrasing:** Avoid 「志望するX」 as a literal rendering of "aspiring X".
   Choose Japanese that describes intention or growth path:
   - 「Xを目指す人」 / 「Xとして成長したいなら」 / 「Xになりたい人」 / 「Xとして腕を上げたい人」
   - For direct advice framing: 「Xとして成長したいなら、最も大事なアドバイスは」 (not 「志望するXへの最良のアドバイスは」)
+- **Biography and profile sentences (appositive constructions):** When English uses an appositive to stack two biographical facts in one sentence (e.g. "Lee Tien, a senior staff attorney at EFF who specializes in X, also focuses on Y"), split into two natural Japanese sentences.
+  - Avoid subject duplication caused by literal translation of appositive structures.
+  - Translate "free speech law" as 表現の自由に関する法律, not フリースピーチ法.
+  - Translate "staff attorney" as スタッフ弁護士; for "senior staff attorney" use シニアスタッフ弁護士.
+  - Translate "intersection with X law" as X法との交差領域, not X法との交差点.
+  - When "specializes in" would sound too repetitive in the same sentence, use 詳しい as a natural alternative.
+  - Keep organization names such as Electronic Frontier Foundation in English unless a standard Japanese name is clearly established; EFF may be used after first mention.
+
 - **Local energy (capacitors):** Do not translate "local energy" as 「ローカルエネルギー」. Explain function: 「各部品のすぐ近くで一時的に必要になる電荷を供給する」. See `glossary.tsv` entry `local energy`.
 - **Resistor / energy dissipation:** Avoid 「余剰エネルギーを除去する」. Prefer 「余分なエネルギーを熱として逃がす」. See `glossary.tsv` entry `resistor removes excess energy`.
 - **Bed-of-nails tester:** Explain the physical setup; do not use bare 「ベッドオブネイルズテスター」 or 「一斉に探針される」. Good: 「針山のように多数のプローブを並べた検査治具を使い、テストポイントに一斉に接触させて検査する（ベッド・オブ・ネイルズ治具）」. See `glossary.tsv` entry `bed-of-nails tester`.
@@ -170,6 +187,14 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - For safety instructions use 「必ず」, 「絶対に」, or 「忘れずに」 depending on severity.
   - ×「コンセントからNOT抜いてあること」→ ○「コンセントから「必ず」抜いてあること」
   - Do not mechanically carry over English emphasis markers into Japanese prose.
+
+- **errata / workaround:**
+  - Spell **エラッタ**, not エラータ. エラータ is a common mispronunciation; avoid it.
+  - In running prose, prefer 不具合 or 既知の不具合 when that reads more naturally than repeating エラッタ.
+  - For semiconductor or hardware specification known-bug lists, エラッタ is acceptable and standard.
+  - For book correction lists (printed corrections), prefer 正誤表.
+  - Prefer **回避策** over ワークアラウンド.
+  - When describing ordinary user or device conditions, prefer **通常の使用条件** over 通常の動作条件 unless the technical context specifically requires the latter.
 
 - **Duplicated heading/title fragments (OCR/extraction artifacts):** Watch for artifacts where a heading, chapter title, or quoted title is duplicated inside itself.
   - Verify suspicious quoted titles against `source/chapter-map.json` or the source extract before changing.
