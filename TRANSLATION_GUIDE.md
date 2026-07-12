@@ -109,6 +109,10 @@ Good (first-mention → subsequent): 「はんだレジスト（soldermask）と
 - US Code citations (e.g., `17 U.S.C § 1201(f)`)
 - Footnote numbers (preserve as superscripts)
 
+### Numbers and units
+
+- **Unit spacing:** Insert a space between a numeral and its SI unit symbol: `133 MHz`, `400 MB/s`, `1.5 V`, `8 mA`, `50 mV`. Do not write `133MHz` or `400MB/s`. Applies to body text and captions; code blocks and command listings are exempt.
+
 ### Sentence construction
 
 **Rebuild sentences; do not mirror English syntax.** When a literal translation produces stacked relative clauses, unclear pronouns, or abstract noun chains, break or rephrase.
@@ -205,6 +209,37 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - single-ended signaling → 「シングルエンド信号」; differential signaling → 「差動信号」
   - LVDS: expand on first use as LVDS（低電圧差動信号）. AGTL+ and SST-2: keep source ASCII spelling; AGTL+ uses ASCII `+`, not full-width ＋.
   - Blind replacement of シグナリング is a valid first pass; review each sentence individually — "signaling" sometimes means the signal itself and sometimes the convention or method.
+  - When defining 信号規格 inline, avoid circular definitions that repeat 規格 in both the headword and its parenthetical gloss. Put function first: 「電圧をどの論理値に対応させるかを定めた規格を、信号規格という」. Avoid 「特定の標準」 as a loan translation of "a particular standard/convention".
+
+- **Technical classification sentences:** When classifying a set of technical categories, prefer 「〜に分けられる」 over 「〜カテゴリがある」 or 「〜種類がある」.
+  - ×「信号方式には大きく分けて二つのカテゴリがある——A と B だ」
+  - ○「信号方式は大きく二つに分けられる。A と B だ」
+
+- **由緒ある for technical standards:** Do not use 「由緒ある」 for established electrical or signal conventions. Prefer 「古くからある」, 「従来の」, or 「定番の」.
+  - ×「由緒あるTTLや3.3V CMOSの信号規格は、」
+  - ○「古くからあるTTLや3.3V CMOSの信号規格は、」
+
+- **電気波:** Do not use 「電気波」 for high-speed digital signal propagation effects. Prefer 「信号の伝搬」 or 「電気信号の波」. For the physics concept use 「電磁波」.
+  - ×「電気波の伝搬が遅い」 / 「電気波が反射を引き起こす」
+  - ○「信号の伝搬が遅い」 / 「信号が伝送路の終端で反射する」
+
+- **実装 (physical vs logical):** Reserve 「実装する」 for software, FPGA logic, and formal circuit design. For physically attaching a component to a board, use 「取り付ける」 or 「載せる」.
+  - ×「プロセッサを実装する方法」（物理的な取り付けを指す場合）
+  - ○「プロセッサを取り付ける方法」 / 「プロセッサを載せる方法」
+
+- **「サポート」 as noun ending:** Do not end a sentence or clause with bare 「〜のサポート」. Use the verb form 「〜に対応している」 or 「〜をサポートしている」.
+  - ×「広く使われているほぼすべての信号規格のサポートが組み込まれていることだ」
+  - ○「広く使われているほぼすべての信号規格に対応していることだ」
+
+- **List structure mismatch (いずれか / N つ):** When listing N options introduced by 「いずれか」, do not append 「の N つだ」 as a sentence-final tag. State the count before the list or restructure.
+  - ×「次のいずれかのバスを盗み聞きすることで取得できる。（1）…（2）…（3）…の三つだ。」
+  - ○「次の三つのバスのどれかを盗み聞きすれば取得できる。（1）…、（2）…、（3）…だ。」
+
+- **source / sink current:** Do not use 「電流供給・シンク」 as a compound noun. Use 「電流をソース／シンクする」 as a verb phrase.
+  - ×「8 mAの電流供給・シンクに問題なく」
+  - ○「8 mAの電流をソース／シンクできる」
+
+- **spare / empty footprint:** Do not use 「スペアフットプリント」. Render as 「未実装のフットプリント」 (unpopulated mounting area reserved for a component) or 「空のフットプリント」 (physically empty pad). See `glossary.tsv` entry `footprint`.
 
 - **Duplicated heading/title fragments (OCR/extraction artifacts):** Watch for artifacts where a heading, chapter title, or quoted title is duplicated inside itself.
   - Verify suspicious quoted titles against `source/chapter-map.json` or the source extract before changing.
@@ -414,7 +449,7 @@ If page-level attribution is necessary, use the canonical `<small>` footer at th
 
 ## LLM translation checklist
 
-Before marking any section complete, verify all 22 items:
+Before marking any section complete, verify all 24 items:
 
 1. Japanese reader can understand the point without decoding English syntax.
 2. bunnie's voice feels direct, practical, hacker-like, and essay-like.
@@ -438,3 +473,5 @@ Before marking any section complete, verify all 22 items:
 20. Bit/byte units accurate (Mbit ≠ MB); byte equivalent added on first mention of flash capacity.
 21. No credit/license blockquote under any chapter title; attribution is in the bottom `<small>` footer only.
 22. No English figure labels (`Figure N-M`) in visible Japanese prose or captions; all must be `図N-M`. Verified with `rg "Figure [0-9]+-[0-9]+" docs/ja/chNN.md` — only alt text, filenames, HTML comments, and intentional quotations are exempt.
+23. Number-unit spacing: SI unit symbols are preceded by a space throughout body text and captions (133 MHz not 133MHz; 8 mA not 8mA). Spot-check with `rg '[0-9][A-Za-z]' docs/ja/chNN.md`.
+24. 実装 not used for physical component mounting; 取り付ける / 載せる used for physical attachment to a board.
