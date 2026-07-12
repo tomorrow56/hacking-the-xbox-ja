@@ -33,7 +33,6 @@ gtag('config', 'G-E0N88X4QBG');`,
 
     nav: [
       { text: 'ホーム', link: '/' },
-      { text: '翻訳プロジェクト', link: '/translation-ci-cd' },
       { text: 'クレジット', link: '/credits' },
       { text: 'ライセンス', link: '/license' },
       { text: '翻訳方針', link: 'https://github.com/Nico-Tech-Shenzhen/hacking-the-xbox-ja/blob/main/TRANSLATION_GUIDE.md' },
