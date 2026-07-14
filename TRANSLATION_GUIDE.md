@@ -255,6 +255,18 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - Remove accidental duplicate fragments when fixing text. Do not invent new titles.
   - ×「第8章「XboxセキュリティのリバースエンジニアリングXboxセキュリティ」」→ ○「第8章「Xboxセキュリティのリバースエンジニアリング」」
 
+- **`aggressive` in technical contexts (design rules, specs):** Do not use `アグレッシブ` in technical prose. Use `厳格な` for design rules or manufacturing constraints; `高密度な` for packed or fine-pitch layouts; `積極的な` only for business/cost contexts.
+  - ×「アグレッシブな設計ルール」→ ○「厳格な設計ルール」 / 「細密な設計ルール」
+
+- **`signal integrity` vs `electric integrity`:** In PCB and signal-analysis contexts, always use `信号インテグリティ`. Do not substitute `電気インテグリティ` — that term implies power delivery integrity, not signal quality. Use `電源インテグリティ` only when the source explicitly refers to power delivery.
+
+- **Connector gender (male/female):** Do not use bare `ジェンダー` for connector polarity. On first mention explain as `コネクタのオス・メス形状` or `コネクタの向き（オス・メス）`. After first mention, `オス側` / `メス側` is sufficient.
+  - ×「誤ったジェンダーのフットプリント」→ ○「オス・メスが逆のフットプリント」
+
+- **Solder wetting:** First mention: `ぬらす（ウェット）` or `はんだの濡れ性`; subsequent: `ウェット` (adjective) or `濡れ` / `ウェッティング` is acceptable as a verb noun only. Do not repeat bare `ウェッティング` as a standalone noun phrase without Japanese gloss after first mention.
+
+- **Low-volume manufacturing:** Do not use `低ボリューム` or `低ボリューム生産`. Use `小ロット` or `少量生産`. Likewise `クイックターン・低ボリューム` → `クイックターン少量生産` or `少量プロトタイプ`.
+
 - **Bit/byte capacity notation:** Preserve bit/byte units accurately. Do not confuse Mbit with MB.
   - On first mention of flash memory capacity, add the byte equivalent: 8Mbit（1MB）のフラッシュROM.
   - ×「8Mbitのフラッシュ」（first mention, unit unclear）→ ○「8Mbit（1MB）のフラッシュROM」

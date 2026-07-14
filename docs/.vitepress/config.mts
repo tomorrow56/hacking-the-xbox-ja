@@ -9,6 +9,9 @@ export default defineConfig({
   base: '/hacking-the-xbox-ja/',
 
   head: [
+    // Default to light mode for first-time visitors (no saved preference).
+    // Runs before VitePress's check-dark-mode script; toggle still works.
+    ['script', {}, `(function(){try{if(!localStorage.getItem('vitepress-theme-appearance')){localStorage.setItem('vitepress-theme-appearance','light');}}catch(e){}})();`],
     ['meta', { name: 'robots', content: 'noindex' }],
     ['meta', { name: 'author', content: 'Andrew "bunnie" Huang (原著); 翻訳: ニコ技深圳コミュニティ / 高須正和 / TAKASU Masakazu' }],
     [

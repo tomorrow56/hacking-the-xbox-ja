@@ -157,3 +157,13 @@ bus snooping / bus eavesdropping	バスを盗み聞きする	Passive capture of 
 in-band	インバンド	Control or data carried within the main data channel (opposite of sideband). Keep katakana.
 sideband	サイドバンド	Auxiliary control signals outside the main data path (e.g., address, chip select, interrupt lines in non-HyperTransport buses). Keep katakana.
 nForce	nForce	NVIDIA nForce chipset product name. Keep original lowercase-n spelling as a product name. The manufacturer is NVIDIA (not nVidia).
+solder wetting / wetting	はんだの濡れ性 / ウェット（濡れる）	First mention: 「ぬらす（ウェット）」; subsequent: ウェット or 濡れ. Avoid bare ウェッティング as a repeated standalone noun; use as verb-noun only.
+tweezer iron / tweezer-type soldering iron	ピンセット型はんだごて	For tong-style or tweezer soldering irons. Avoid トング式はんだごて.
+popcorning (PCB defect)	ポップコーン現象	Moisture-induced explosive chip failure during reflow. Use ポップコーン現象. ポップコーニング is acceptable but less standard in Japanese.
+BGA reballing	BGAリボール	Re-attaching BGA solder balls. Use BGAリボール. Avoid 再ボール付け.
+low volume (manufacturing)	小ロット / 少量生産	Do not use 低ボリューム. For quick-turn prototype context: 小ロットプロトタイプ / クイックターン少量生産.
+aggressive (design rules / manufacturing specs)	厳格な / 高密度な	For design rules: 厳格な設計ルール. For fine-pitch/dense layouts: 高密度な. Avoid アグレッシブ in technical prose.
+signal integrity	信号インテグリティ	Consistent term for PCB/signal quality. Do not substitute 電気インテグリティ, which refers to power delivery. Use 電源インテグリティ only for power-delivery integrity.
+connector gender (male/female)	コネクタのオス・メス形状	For connector polarity. Explain on first mention as コネクタのオス・メス形状 or コネクタの向き（オス・メス）. Avoid bare ジェンダー for this meaning.
+factory check / manufacturing review	工場検査 / 製造前検査	For PCB manufacturing DRC-style checks by the fab. Avoid ファクトリーチェック.
+jeweler's loupe / proofing loupe	高倍率ルーペ / 宝石鑑定用ルーペ	Generic high-magnification portable magnifier. Use 高倍率ルーペ. Avoid ジュエラーズルーペ and プルーフィングルーペ as unexplained katakana.
