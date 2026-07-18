@@ -196,3 +196,8 @@ tempura solder	天ぷらはんだ	Japanese term for solder sitting on the surfac
 flux-cored solder	フラックス入りはんだ	General and modern term. Avoid フラックスコア入りはんだ (verbose). For the circular phrase フラックスコア内のフラックス, rephrase: フラックス入りはんだに含まれるフラックスだけでは.
 rosin-core solder	ヤニ入りはんだ／ロジン入りはんだ	ヤニ入りはんだ is familiar in older Japanese electronics prose; use フラックス入りはんだ if context is general or modern.
 circuit board (kanji)	基板	Use 基板 (板 = board/plate). Do NOT use 基盤 (盤 = disc/foundation). Common kanji error. PCB → 基板; printed circuit board → プリント基板.
+in an afternoon (casual time-estimate idiom)	半日で作れる／午後の半日で作れる／一日かからず作れる	Do not translate literally as 午後一つで作れる. Choose depending on tone and context.
+component count (netlist/PCB checking context)	部品数／接続部品数	For netlist, schematic, or PCB connection-count checks. Avoid コンポーネント数 here; that rendering is only for software-architecture or formal tool-terminology contexts. Does not weaken the general component → 部品 rule.
+resistive heating / resistance heating	抵抗成分による発熱／抵抗による発熱	PCB trace/current context (unwanted heating from trace resistance). Avoid 抵抗加熱, which reads as an intentional heating method. ジュール熱 acceptable if natural; do not over-formalize casual prose.
+serpentine trace / serpentine routing	蛇行配線／サーペンタイン配線	PCB length-matching trace pattern. First explanatory mention: 蛇行させた配線パターン（サーペンタイン配線、ミアンダ配線）or concise equivalent. Avoid leaving bare カタカナ without the 蛇行配線 function gloss.
+meander trace / meander routing	ミアンダ配線	Synonym/variant of serpentine trace in PCB length-matching context. See serpentine trace entry for first-mention pattern.

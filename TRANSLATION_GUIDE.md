@@ -161,6 +161,7 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - "As with any X / like any X": ×「どんなゲームと同じく」→ ○「どんなゲームとも同じで」 / 「どんなXの場合と同じで」
   - Do not carry over English connective syntax. Find the Japanese phrase that carries the same rhetorical move.
   - **"nifty hack"**: Do not transliterate as ニッティハック。Render as 気の利いた小技, 気の利いたハック, or 小粋なハック depending on tone.
+  - **"can be built in an afternoon" (casual time-estimate idiom):** Do not translate literally as 午後一つで作れる. Prefer 半日で作れる, 午後の半日で作れる, or 一日かからず作れる depending on tone and context.
   - **Punchline / irony sentences**: When English piles up a list of examples before a punchline, split into separate Japanese sentences so the punchline lands. Do not carry English example-chains mechanically into a single Japanese sentence.
   - **Awkward English idioms (e.g. "sack of rice")**: Preserve the joke only if it can be made naturally readable in Japanese. 米袋 is acceptable when the irony is clear; rephrase or omit if the literal image causes confusion rather than humor.
   - **Cultural slang as technical metaphor:** When English slang encodes a function Japanese readers may not recognise (e.g., "green paper" = money/bribery, "rubber hose" = physical coercion), state the Japanese function first, then add the English term in parentheses: `現金による贈賄（いわゆる「グリーンペーパー」）`, not `グリーンペーパー（贈賄）`.
@@ -266,6 +267,11 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
 - **`component` in hardware prose:** Prefer `部品` in ordinary electronics and hardware prose. Use `電子部品` only when the electronics context must be made explicit. Avoid `コンポーネント` unless the source clearly refers to a software component, system-architecture component, or named UI/framework concept.
   - component side → `部品面`; component lead → `部品のリード`
   - ×「SMTコンポーネントを基板に取り付ける」→ ○「表面実装部品を基板に取り付ける」
+  - **Netlist / schematic / PCB checking contexts specifically:** this rule still applies — do not weaken it. "component count" in a netlist-connection-check sentence → `部品数` / `接続部品数` / `各ネットに接続されている部品数` / `ネットごとの接続数`. Avoid `コンポーネント数` here. `コンポーネント数` is acceptable only in software-architecture or formal tool-terminology contexts, not in hardware/PCB prose.
+
+- **Resistive heating / resistance heating (PCB trace / current-carrying context):** Do not use `抵抗加熱` — it reads as an intentional heating method, not unwanted trace heating. Prefer `抵抗成分による発熱` or `抵抗による発熱`. `ジュール熱` is acceptable if it fits naturally, but do not over-formalize otherwise casual prose.
+
+- **Serpentine / meander trace (PCB length-matching):** serpentine trace / serpentine routing → `蛇行配線` / `サーペンタイン配線`; meander trace / meander routing → `ミアンダ配線`. On first explanatory mention, prefer function-first phrasing such as `蛇行させた配線パターン（サーペンタイン配線、ミアンダ配線）` or a concise equivalent — do not leave bare カタカナ alone when the function is clearer as `蛇行配線`.
 
 - **`joint` in soldering prose:** Avoid bare `ジョイント` in Japanese electronics prose.
   - solder joint → `はんだ接合部` / `はんだ付け部` / `はんだ付けした部分` (choose for readability)
