@@ -1,0 +1,56 @@
+{
+  "_note": "Pilot crop manifest for replacing full-page rendered figures with cropped figure-only images. Coordinates are pixel boxes [left, top, right, bottom] measured against source_size (the source page render's actual pixel dimensions). box_type is always 'pixel' for now; a 'normalized' box_type may be added later if renders are regenerated at different resolutions.",
+  "_status": "pilot - only 4 entries populated (ch01, Figures 1-1 through 1-4); do not batch-generate the rest until this workflow is reviewed",
+  "_rules": [
+    "Figure-only crop images must be tightly framed around the figure content (photo/diagram), not the surrounding page whitespace.",
+    "Avoid large margins: crop boxes should be derived from the actual content bounding box on the source render, not eyeballed page-fraction estimates.",
+    "Multi-part figures that appear as sub-images sharing one physical figure/caption on the source page (e.g. two side-by-side photos under a single caption like 'Figure 1-7 and Figure 1-8') should be cropped as one combined figure block, unless the source page clearly presents them as separate, independently-labeled figures.",
+    "Every cropped figure referenced from Markdown must be visually checked (via Read/image preview) for correct size, framing, and presence before being considered done - do not assume a crop is correct from coordinates alone."
+  ],
+  "crops": [
+    {
+      "id": "ch01-fig1-1",
+      "figure_label": "Figure 1-1",
+      "source_render": "docs/public/images/page-034-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [114, 127, 710, 338],
+      "output_image": "docs/public/images/figures/ch01-fig1-1.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Photo of security bit selection, top of page 034 render. Tightened from the pilot v1 box, which clipped the top of the tallest bit and left excess right/bottom margin."
+    },
+    {
+      "id": "ch01-fig1-2",
+      "figure_label": "Figure 1-2",
+      "source_render": "docs/public/images/page-041-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [120, 97, 751, 628],
+      "output_image": "docs/public/images/figures/ch01-fig1-2.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Top photo on page 041 render (Xbox bottom case, screw locations). Confirmed OK in pilot review; left unchanged."
+    },
+    {
+      "id": "ch01-fig1-3",
+      "figure_label": "Figure 1-3",
+      "source_render": "docs/public/images/page-041-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [141, 684, 764, 1031],
+      "output_image": "docs/public/images/figures/ch01-fig1-3.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Bottom photo block on page 041 render: two side-by-side sub-photos (hand prying rubber foot / hand pressing foot back) sharing a single 'Figure 1-3' caption. Cropped as one combined figure block per the multi-part-figure rule. Was missing from the pilot v1 manifest/Markdown; added here."
+    },
+    {
+      "id": "ch01-fig1-4",
+      "figure_label": "Figure 1-4",
+      "source_render": "docs/public/images/page-042-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [100, 95, 723, 483],
+      "output_image": "docs/public/images/figures/ch01-fig1-4.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Photo of screws hidden by serial number / certification labels, page 042 render. Tightened from the pilot v1 box, which clipped the left edge and left excess right margin."
+    }
+  ]
+}
