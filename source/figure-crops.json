@@ -51,6 +51,94 @@
       "output_image": "docs/public/images/figures/ch01-fig1-4.png",
       "target_markdown": "docs/ja/ch01.md",
       "notes": "Photo of screws hidden by serial number / certification labels, page 042 render. Tightened from the pilot v1 box, which clipped the left edge and left excess right margin."
+    },
+    {
+      "id": "ch02-fig2-1",
+      "figure_label": "Figure 2-1",
+      "source_render": "docs/public/images/page-052-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [96, 311, 726, 624],
+      "output_image": "docs/public/images/figures/ch02-fig2-1.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "Cross-section circuit board photo, page 052 render. Bounding box derived from pixel darkness analysis, small margin added."
+    },
+    {
+      "id": "ch02-fig2-2",
+      "figure_label": "Figure 2-2",
+      "source_render": "docs/public/images/page-053-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [137, 263, 767, 596],
+      "output_image": "docs/public/images/figures/ch02-fig2-2.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "Motherboard passive-components photo, page 053 render. Excluded the 'Why Do Circuit Board Traces Meander Everywhere?' sidebar below it (separate content block, not part of the figure)."
+    },
+    {
+      "id": "ch02-fig2-3",
+      "figure_label": "Figure 2-3",
+      "source_render": "docs/public/images/page-054-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [96, 685, 726, 1125],
+      "output_image": "docs/public/images/figures/ch02-fig2-3.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "BGA cross-section photo, page 054 render."
+    },
+    {
+      "id": "ch02-fig2-4",
+      "figure_label": "Figure 2-4",
+      "source_render": "docs/public/images/page-056-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [106, 962, 698, 1159],
+      "output_image": "docs/public/images/figures/ch02-fig2-4.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "IC part-number anatomy line diagram, page 056 render. Diagram is sparse line art, not a photo, so bounds were derived by inspecting the rendered page directly rather than density thresholding. v1 box top (938) bled into the tail of the preceding paragraph's text line ('...part.'); tightened to start after that line (row 962)."
+    },
+    {
+      "id": "ch02-fig2-5",
+      "figure_label": "Figure 2-5",
+      "source_render": "docs/public/images/page-058-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [80, 515, 750, 1200],
+      "output_image": "docs/public/images/figures/ch02-fig2-5.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "Xbox high-level architecture block diagram, page 058 render. Sparse line art with labeled boxes; bounds derived by visual inspection."
+    },
+    {
+      "id": "ch02-fig2-6",
+      "figure_label": "Figure 2-6",
+      "source_render": "docs/public/images/page-059-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [137, 345, 767, 927],
+      "output_image": "docs/public/images/figures/ch02-fig2-6.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "Labeled Xbox motherboard photo, page 059 render."
+    },
+    {
+      "id": "ch02-fig2-7",
+      "figure_label": "Figure 2-7",
+      "source_render": "docs/public/images/page-067-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [137, 632, 767, 1190],
+      "output_image": "docs/public/images/figures/ch02-fig2-7.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "Via P4M266 motherboard photo, page 067 render."
+    },
+    {
+      "id": "ch02-fig2-8",
+      "figure_label": "Figure 2-8",
+      "source_render": "docs/public/images/page-069-render.png",
+      "source_size": [864, 1296],
+      "box_type": "pixel",
+      "box": [137, 85, 767, 451],
+      "output_image": "docs/public/images/figures/ch02-fig2-8.png",
+      "target_markdown": "docs/ja/ch02.md",
+      "notes": "GameCube motherboard plus power regulator card photo, page 069 render."
     }
   ]
 }
