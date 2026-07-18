@@ -57,7 +57,7 @@ translation_status: draft
 
 抵抗器、キャパシタ（コンデンサ）、インダクタ、トランジスタやダイオードなどの小型半導体デバイスのような単純な表面実装部品は、基板への取り付けが容易だ。これらの部品の取り付け手順を見ていこう。
 
-![Figure B-1: Applying solder to one pad, aligning and tacking component with tweezers, then soldering remaining pads](/images/page-233-render.png)
+![Figure B-1: Applying solder to one pad, aligning and tacking component with tweezers, then soldering remaining pads](/images/figures/appb-figb-1.png)
 **図B-1**: （1）対象部品のランドの一つにはんだを少量塗布する。この例では対象部品はC25。（2）はんだを盛ったあとの状態。（3）ピンセットで部品を位置合わせし、最初に盛ったはんだが部品のリードに流れるまではんだごてで熱を加える。（4）残りの部品のランドをはんだ付けする。
 
 まず、部品のランドの一つにはんだを盛り、ピンセットを使って部品をランドの上に置いて位置合わせする。部品の配置に問題がないと判断したら、盛ったはんだが溶けて部品がランドの上に沈み込むまで熱を加える。アライメントを微調整しながら熱を加え続ける。熱を離してはんだが冷えて固まるのを待つ。部品のアライメントを再確認してから、残りの部品の接点を基板にはんだ付けする。最初のはんだ付け部が鈍く見えたり弱そうに見えたりする場合は、他のピンをすべてはんだ付けした後で、少量のはんだを加えながら再加熱する（図B-1参照）。この手順は2〜3ピンの部品や、50 milピッチのスモールアウトラインICパッケージデバイスのような広いピッチのマルチピン部品に有効だ。
@@ -73,7 +73,7 @@ translation_status: draft
 
 最初のステップは、チップの2つの対角にある各1ピンをはんだ付けして基板にチップを仮固定することだ。最初の試みでアライメントが正しくない場合は、2つのコーナーのうち1つを加熱しながらチップを希望する方向に押すだけで簡単に修正できる（図B-2参照）。このアライメントの精度には十分注意すること——位置ずれしたチップはチップのはんだ付けに際して際限のない苦労を招く。
 
-![Figure B-2: Soldering one pin on each of two opposite corners to tack chip in place](/images/page-235-render.png)
+![Figure B-2: Soldering one pin on each of two opposite corners to tack chip in place](/images/figures/appb-figb-2.png)
 **図B-2**: まず、チップの対角にある2つのコーナーにそれぞれ1ピンをはんだ付けする。この図の矢印はこの例で使用するコーナーを示している。
 
 次のステップは、チップの周りに薄いはんだフラックスの膜を塗布することだ。これにより、チップのピンへのはんだの濡れ性が高まり、ショートを引き起こすリード間ではなく部品のランドにはんだが引き込まれる（図B-3参照）。
@@ -83,7 +83,7 @@ translation_status: draft
 
 すべてのリードにはんだフラックスが均一に塗布されたら、はんだごての先端に少量のはんだを乗せ、それをはんだ付けされていないリードに押し当てる。はんだが部品のリードの下や周りの空間に浸透していく。すべてのリードにはんだが塗布されるまでこの作業を繰り返す。この時点で過剰なはんだが複数のピンをブリッジしていても気にしないこと。すべてのピンのはんだ付けが終わったら、銅のはんだ吸い取り線（ソルダーウィック）を使って、図B-4に示すようにはんだブリッジを除去する。
 
-![Figure B-3: Applying paste flux to chip pins using a scrap wire repeatedly dipped in flux container](/images/page-236-render.png)
+![Figure B-3: Applying paste flux to chip pins using a scrap wire repeatedly dipped in flux container](/images/figures/appb-figb-3.png)
 **図B-3**: チップ周りのピンに薄いはんだフラックスの膜を塗布する。この図では、フラックスの容器に何度もつけた端切れワイヤを使ってペーストフラックスを塗布している。
 
 ほぼ完成だ。最後に、すべてのピンがしっかりとはんだ付けされていることを確認する。顕微鏡なしに目視でこの検査を行うのは難しい。代わりに、ニードルまたはピンセットの先端でピンを引っ張り、図B-5に示すようにしっかりとした一定の力でピンに沿ってピンセットを動かす。はんだ付けされていないピンは少し動く。動いた場合は、ピンを元の位置に押し戻し、そのピンに少量のはんだを加えて修復する。
@@ -93,11 +93,13 @@ translation_status: draft
 
 部品がはんだ付けされたら、イソプロピルアルコールなどの穏やかな溶剤をつけた綿棒で余分なフラックスを洗浄する（図B-6参照）。洗浄は目視検査を容易にするためだけでなく、デバッグ中のチップピンのプロービングも容易にするため重要だ。また、多くのフラックスは時間とともに硬化して汚染物質を閉じ込め、将来の修理の妨げになるためでもある。
 
-![Figure B-4: Four steps for soldering fine-pitch pins including transferring solder from iron tip and removing bridges with desoldering braid](/images/page-237-render.png)
+![Figure B-4: Four steps for soldering fine-pitch pins including transferring solder from iron tip and removing bridges with desoldering braid](/images/figures/appb-figb-4.png)
 **図B-4**: （1）少量のはんだを熱いごての先端に溶かし込む。（2）このはんだを部品のピンに転写する。すべてのピンがはんだ付けされるまで（1）と（2）を繰り返す。（3）矢印で示したはんだブリッジが多くのピンに形成されている。（4）銅のはんだ吸い取り線を使ってはんだブリッジを除去する。
 
-![Figure B-5 and Figure B-6: Checking solder joints by stroking pins, and cleaning flux residue with cotton swab](/images/page-238-render.png)
-**図B-5**: ピンセットまたはニードルを使って、しっかりとした一定の力でチップの側面に沿ってピンをなぞる。しっかりはんだ付けされていないピンは少し曲がる。矢印は動作方向を示している。  
+![Figure B-5: Checking solder joints by stroking pins](/images/figures/appb-figb-5.png)
+**図B-5**: ピンセットまたはニードルを使って、しっかりとした一定の力でチップの側面に沿ってピンをなぞる。しっかりはんだ付けされていないピンは少し曲がる。矢印は動作方向を示している。
+
+![Figure B-6: Cleaning flux residue with cotton swab](/images/figures/appb-figb-6.png)
 **図B-6**: 穏やかな溶剤に浸した綿棒でフラックスの残留物を洗浄する。
 
 ## 部品の取り外し手順
@@ -116,7 +118,7 @@ translation_status: draft
 
 これらの種類のパッケージを取り付けるのに必要な設備は非常に高価なので、趣味家がBGAパッケージデバイスを取り付ける最良の方法は、専門の組み立て会社に依頼することだ。Naprotek（[http://www.naprotek.com](http://www.naprotek.com)）のようなクイックターン少量生産のプロトタイピングを専門とする会社は、BGAパッケージデバイスの取り付けをかなり合理的な料金で行ってくれる。BGAを取り付けてもらうときは、必ず部品の検査写真のコピーを要求すること——写真による安心感は追加コストに値する。BGAパーツの取り外しやBGAリボールも可能だが、このプロセスは取り付けよりかなり高くつくことがある。
 
-![Figure B-7: Four steps of chip removal by realloy method](/images/page-240-render.png)
+![Figure B-7: Four steps of chip removal by realloy method](/images/figures/appb-figb-7.png)
 **図B-7**: はんだを再合金化してチップを取り外す。（このプロセスを始める前にチップのピンにはんだフラックスを塗布すること。）（1）再合金化化合物をチップのすべてのピンに溶かし込む。再合金化化合物はワイヤ状になっている。（2）はんだごての先端を金属のビードに沿って引きずるようにして、チップ周りの金属の塊を加熱する。再合金化されたはんだすべてが溶融状態になったら、チップをランドから押してスライドさせられる。（3）加熱して綿棒で拭き取ることで、基板とチップの両方から再合金化化合物を洗浄する。（4）結果：きれいなチップの取り外し。
 
 <small>

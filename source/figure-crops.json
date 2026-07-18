@@ -12,9 +12,17 @@
       "id": "ch01-fig1-1",
       "figure_label": "Figure 1-1",
       "source_render": "docs/public/images/page-034-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [114, 127, 710, 338],
+      "box": [
+        114,
+        127,
+        710,
+        338
+      ],
       "output_image": "docs/public/images/figures/ch01-fig1-1.png",
       "target_markdown": "docs/ja/ch01.md",
       "notes": "Photo of security bit selection, top of page 034 render. Tightened from the pilot v1 box, which clipped the top of the tallest bit and left excess right/bottom margin."
@@ -23,9 +31,17 @@
       "id": "ch01-fig1-2",
       "figure_label": "Figure 1-2",
       "source_render": "docs/public/images/page-041-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [120, 97, 751, 628],
+      "box": [
+        120,
+        97,
+        751,
+        628
+      ],
       "output_image": "docs/public/images/figures/ch01-fig1-2.png",
       "target_markdown": "docs/ja/ch01.md",
       "notes": "Top photo on page 041 render (Xbox bottom case, screw locations). Confirmed OK in pilot review; left unchanged."
@@ -34,9 +50,17 @@
       "id": "ch01-fig1-3",
       "figure_label": "Figure 1-3",
       "source_render": "docs/public/images/page-041-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [141, 684, 764, 1031],
+      "box": [
+        141,
+        684,
+        764,
+        1031
+      ],
       "output_image": "docs/public/images/figures/ch01-fig1-3.png",
       "target_markdown": "docs/ja/ch01.md",
       "notes": "Bottom photo block on page 041 render: two side-by-side sub-photos (hand prying rubber foot / hand pressing foot back) sharing a single 'Figure 1-3' caption. Cropped as one combined figure block per the multi-part-figure rule. Was missing from the pilot v1 manifest/Markdown; added here."
@@ -45,20 +69,131 @@
       "id": "ch01-fig1-4",
       "figure_label": "Figure 1-4",
       "source_render": "docs/public/images/page-042-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [100, 95, 723, 483],
+      "box": [
+        100,
+        95,
+        723,
+        483
+      ],
       "output_image": "docs/public/images/figures/ch01-fig1-4.png",
       "target_markdown": "docs/ja/ch01.md",
       "notes": "Photo of screws hidden by serial number / certification labels, page 042 render. Tightened from the pilot v1 box, which clipped the left edge and left excess right margin."
     },
     {
+      "id": "ch01-fig1-5",
+      "figure_label": "Figure 1-5",
+      "source_render": "docs/public/images/page-043-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        177,
+        93,
+        718,
+        736
+      ],
+      "output_image": "docs/public/images/figures/ch01-fig1-5.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Two stacked photos (prying near the DVD tray top / prying near the front bottom edge) sharing a single 'Figure 1-5' caption on page 043 render. Cropped as one combined figure block per the multi-part-figure rule."
+    },
+    {
+      "id": "ch01-fig1-6",
+      "figure_label": "Figure 1-6",
+      "source_render": "docs/public/images/page-044-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        606
+      ],
+      "output_image": "docs/public/images/figures/ch01-fig1-6.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Photo of hard drive and DVD drive with arrows showing the three drive carrier screw locations, page 044 render."
+    },
+    {
+      "id": "ch01-fig1-7",
+      "figure_label": "Figure 1-7",
+      "source_render": "docs/public/images/page-045-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        617
+      ],
+      "output_image": "docs/public/images/figures/ch01-fig1-7.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Top photo on page 045 render (freeing the hard drive cable from its retaining notch). Source page presents Figure 1-7 and Figure 1-8 as two separate, independently captioned photos (not a single shared-caption block), so per the multi-part-figure rule they were split into two crops instead of one combined image."
+    },
+    {
+      "id": "ch01-fig1-8",
+      "figure_label": "Figure 1-8",
+      "source_render": "docs/public/images/page-045-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        709,
+        764,
+        1166
+      ],
+      "output_image": "docs/public/images/figures/ch01-fig1-8.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Bottom photo on page 045 render (drives folded outward, preserving electrical connections). See ch01-fig1-7 notes re: splitting the combined Figure 1-7/1-8 markdown reference."
+    },
+    {
+      "id": "ch01-fig1-9",
+      "figure_label": "Figure 1-9",
+      "source_render": "docs/public/images/page-047-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        180,
+        93,
+        727,
+        577
+      ],
+      "output_image": "docs/public/images/figures/ch01-fig1-9.png",
+      "target_markdown": "docs/ja/ch01.md",
+      "notes": "Photo of prying the hard drive power connector off with a flathead screwdriver, page 047 render."
+    },
+    {
       "id": "ch02-fig2-1",
       "figure_label": "Figure 2-1",
       "source_render": "docs/public/images/page-052-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [96, 311, 726, 624],
+      "box": [
+        96,
+        311,
+        726,
+        624
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-1.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "Cross-section circuit board photo, page 052 render. Bounding box derived from pixel darkness analysis, small margin added."
@@ -67,9 +202,17 @@
       "id": "ch02-fig2-2",
       "figure_label": "Figure 2-2",
       "source_render": "docs/public/images/page-053-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [137, 263, 767, 596],
+      "box": [
+        137,
+        263,
+        767,
+        596
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-2.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "Motherboard passive-components photo, page 053 render. Excluded the 'Why Do Circuit Board Traces Meander Everywhere?' sidebar below it (separate content block, not part of the figure)."
@@ -78,9 +221,17 @@
       "id": "ch02-fig2-3",
       "figure_label": "Figure 2-3",
       "source_render": "docs/public/images/page-054-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [96, 685, 726, 1125],
+      "box": [
+        96,
+        685,
+        726,
+        1125
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-3.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "BGA cross-section photo, page 054 render."
@@ -89,9 +240,17 @@
       "id": "ch02-fig2-4",
       "figure_label": "Figure 2-4",
       "source_render": "docs/public/images/page-056-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [106, 962, 698, 1159],
+      "box": [
+        106,
+        962,
+        698,
+        1159
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-4.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "IC part-number anatomy line diagram, page 056 render. Diagram is sparse line art, not a photo, so bounds were derived by inspecting the rendered page directly rather than density thresholding. v1 box top (938) bled into the tail of the preceding paragraph's text line ('...part.'); tightened to start after that line (row 962)."
@@ -100,9 +259,17 @@
       "id": "ch02-fig2-5",
       "figure_label": "Figure 2-5",
       "source_render": "docs/public/images/page-058-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [80, 515, 750, 1200],
+      "box": [
+        80,
+        515,
+        750,
+        1200
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-5.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "Xbox high-level architecture block diagram, page 058 render. Sparse line art with labeled boxes; bounds derived by visual inspection."
@@ -111,9 +278,17 @@
       "id": "ch02-fig2-6",
       "figure_label": "Figure 2-6",
       "source_render": "docs/public/images/page-059-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [137, 345, 767, 927],
+      "box": [
+        137,
+        345,
+        767,
+        927
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-6.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "Labeled Xbox motherboard photo, page 059 render."
@@ -122,9 +297,17 @@
       "id": "ch02-fig2-7",
       "figure_label": "Figure 2-7",
       "source_render": "docs/public/images/page-067-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [137, 632, 767, 1190],
+      "box": [
+        137,
+        632,
+        767,
+        1190
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-7.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "Via P4M266 motherboard photo, page 067 render."
@@ -133,12 +316,704 @@
       "id": "ch02-fig2-8",
       "figure_label": "Figure 2-8",
       "source_render": "docs/public/images/page-069-render.png",
-      "source_size": [864, 1296],
+      "source_size": [
+        864,
+        1296
+      ],
       "box_type": "pixel",
-      "box": [137, 85, 767, 451],
+      "box": [
+        137,
+        85,
+        767,
+        451
+      ],
       "output_image": "docs/public/images/figures/ch02-fig2-8.png",
       "target_markdown": "docs/ja/ch02.md",
       "notes": "GameCube motherboard plus power regulator card photo, page 069 render."
+    },
+    {
+      "id": "appb-figb-1",
+      "figure_label": "Figure B-1",
+      "source_render": "docs/public/images/page-233-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        468,
+        763,
+        1090
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-1.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Four-step photo grid (apply solder / tack with tweezers / solder remaining pads), page 233 render. Bounds derived by pixel row/column density thresholding."
+    },
+    {
+      "id": "appb-figb-2",
+      "figure_label": "Figure B-2",
+      "source_render": "docs/public/images/page-235-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        236,
+        93,
+        668,
+        508
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-2.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Chip corner-tack photo with arrows, page 235 render."
+    },
+    {
+      "id": "appb-figb-3",
+      "figure_label": "Figure B-3",
+      "source_render": "docs/public/images/page-236-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        149,
+        93,
+        668,
+        533
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-3.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Applying paste flux with scrap wire photo, page 236 render."
+    },
+    {
+      "id": "appb-figb-4",
+      "figure_label": "Figure B-4",
+      "source_render": "docs/public/images/page-237-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        763,
+        716
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-4.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Four-step fine-pitch soldering/desoldering-braid photo grid, page 237 render."
+    },
+    {
+      "id": "appb-figb-5",
+      "figure_label": "Figure B-5",
+      "source_render": "docs/public/images/page-238-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        154,
+        93,
+        670,
+        440
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-5.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Stroking pins with tweezers photo, top of page 238 render. Source page presents Figure B-5 and Figure B-6 as two separate, independently captioned photos (not a single shared-caption block), so per the multi-part-figure rule they were split into two crops instead of one combined image. Markdown was updated to add a second image line so each cropped figure sits next to its own caption."
+    },
+    {
+      "id": "appb-figb-6",
+      "figure_label": "Figure B-6",
+      "source_render": "docs/public/images/page-238-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        160,
+        567,
+        659,
+        894
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-6.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Cleaning flux residue with cotton swab photo, bottom of page 238 render. See appb-figb-5 notes re: splitting the combined B-5/B-6 markdown reference."
+    },
+    {
+      "id": "appb-figb-7",
+      "figure_label": "Figure B-7",
+      "source_render": "docs/public/images/page-240-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        216,
+        722,
+        838
+      ],
+      "output_image": "docs/public/images/figures/appb-figb-7.png",
+      "target_markdown": "docs/ja/appendix-b.md",
+      "notes": "Four-step realloy chip-removal photo grid, page 240 render."
+    },
+    {
+      "id": "appc-figc-1",
+      "figure_label": "Figure C-1",
+      "source_render": "docs/public/images/page-243-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        143,
+        96,
+        803,
+        920
+      ],
+      "output_image": "docs/public/images/figures/appc-figc-1.png",
+      "target_markdown": "docs/ja/appendix-c.md",
+      "notes": "Full-width board-design-flow block diagram, page 243 render. The original printed English caption ('Figure C-1: The board design process...') sits inline at the bottom-right of the diagram layout itself (not a separate paragraph below it) and could not be cropped out without clipping the LEGEND/Schematic Capture Tool box directly above it, so it is retained inside the crop. The translated Japanese caption remains as its own line in the Markdown below the image."
+    },
+    {
+      "id": "appc-figc-2",
+      "figure_label": "Figure C-2",
+      "source_render": "docs/public/images/page-246-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        101,
+        591,
+        722,
+        1080
+      ],
+      "output_image": "docs/public/images/figures/appc-figc-2.png",
+      "target_markdown": "docs/ja/appendix-c.md",
+      "notes": "Four-view circuit board layout photo/CAD grid, page 246 render."
+    },
+    {
+      "id": "appc-figc-3",
+      "figure_label": "Figure C-3",
+      "source_render": "docs/public/images/page-247-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        214,
+        208,
+        666,
+        453
+      ],
+      "output_image": "docs/public/images/figures/appc-figc-3.png",
+      "target_markdown": "docs/ja/appendix-c.md",
+      "notes": "Fan-out region line diagram with labels, page 247 render. Sparse line art; bounds derived by pixel density thresholding plus visual confirmation."
+    },
+    {
+      "id": "appc-figc-4",
+      "figure_label": "Figure C-4",
+      "source_render": "docs/public/images/page-253-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        147,
+        707,
+        757,
+        1110
+      ],
+      "output_image": "docs/public/images/figures/appc-figc-4.png",
+      "target_markdown": "docs/ja/appendix-c.md",
+      "notes": "ATX power supply replacement adapter schematic diagram, page 253 render."
+    },
+    {
+      "id": "ch03-fig3-1",
+      "figure_label": "Figure 3-1",
+      "source_render": "docs/public/images/page-073-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        150,
+        764,
+        702
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-1.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Photo of disk drives moved to expose motherboard front edge, page 073 render."
+    },
+    {
+      "id": "ch03-fig3-2",
+      "figure_label": "Figure 3-2",
+      "source_render": "docs/public/images/page-074-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        386
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-2.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Top photo on page 074 render (four retaining screws). Split from Figure 3-3 below: each has its own independent caption on the source page, so cropped as two separate figures rather than one combined block."
+    },
+    {
+      "id": "ch03-fig3-3",
+      "figure_label": "Figure 3-3",
+      "source_render": "docs/public/images/page-074-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        587,
+        723,
+        1119
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-3.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Bottom photo on page 074 render (hand detaching wire connector). Split from Figure 3-2 above; independently captioned figure."
+    },
+    {
+      "id": "ch03-fig3-4",
+      "figure_label": "Figure 3-4",
+      "source_render": "docs/public/images/page-075-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        319,
+        764,
+        1110
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-4.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Two stacked photos (top/bottom friction lock release, numbered 1/2) sharing a single 'Figure 3-4' caption on page 075 render. Cropped as one combined figure block per the multi-part-figure rule."
+    },
+    {
+      "id": "ch03-fig3-5",
+      "figure_label": "Figure 3-5",
+      "source_render": "docs/public/images/page-076-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        351,
+        723,
+        738
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-5.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Photo of thumb pressing middle friction lock, page 076 render."
+    },
+    {
+      "id": "ch03-fig3-6",
+      "figure_label": "Figure 3-6",
+      "source_render": "docs/public/images/page-077-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        839
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-6.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Two stacked photos (numbered 1/2) sharing a single 'Figure 3-6' caption on page 077 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch03-fig3-7",
+      "figure_label": "Figure 3-7",
+      "source_render": "docs/public/images/page-078-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        210,
+        723,
+        707
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-7.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Two stacked photos (top: cutting LED; bottom: LED removed) sharing a single 'Figure 3-7' caption on page 078 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch03-fig3-8",
+      "figure_label": "Figure 3-8",
+      "source_render": "docs/public/images/page-079-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        161,
+        99,
+        736,
+        590
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-8.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Two stacked line diagrams (LED polarity/placement) sharing a single 'Figure 3-8' caption, page 079 render. Cropped as one combined figure block, excluding the caption text below."
+    },
+    {
+      "id": "ch03-fig3-9",
+      "figure_label": "Figure 3-9",
+      "source_render": "docs/public/images/page-080-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        309,
+        338,
+        533,
+        636
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-9.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Small LED anatomy line diagram inside the gray 'Anatomy of an LED' sidebar box on page 080 render. Cropped just the diagram, excluding sidebar prose above/below and the Figure 3-9 caption text. Used a darker pixel threshold (200) to separate line art from the light-gray sidebar background."
+    },
+    {
+      "id": "ch03-fig3-10",
+      "figure_label": "Figure 3-10",
+      "source_render": "docs/public/images/page-081-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        406
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-10.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Top photo on page 081 render (soldering the LEDs). Split from Figure 3-11 below; each has its own independent caption on the source page."
+    },
+    {
+      "id": "ch03-fig3-11",
+      "figure_label": "Figure 3-11",
+      "source_render": "docs/public/images/page-081-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        567,
+        764,
+        874
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-11.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Bottom photo on page 081 render (finished board assembly). Split from Figure 3-10 above; independently captioned figure."
+    },
+    {
+      "id": "ch03-fig3-12",
+      "figure_label": "Figure 3-12",
+      "source_render": "docs/public/images/page-082-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        689,
+        723,
+        1156
+      ],
+      "output_image": "docs/public/images/figures/ch03-fig3-12.png",
+      "target_markdown": "docs/ja/ch03.md",
+      "notes": "Photo of front panel wire connector orientation features, page 082 render."
+    },
+    {
+      "id": "ch04-fig4-1",
+      "figure_label": "Figure 4-1",
+      "source_render": "docs/public/images/page-086-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        215,
+        616,
+        565
+      ],
+      "output_image": "docs/public/images/figures/ch04-fig4-1.png",
+      "target_markdown": "docs/ja/ch04.md",
+      "notes": "Photo of Xbox controller extension cable and breakaway cable, page 086 render. Split from Figure 4-2 below; each has its own independent caption on the source page."
+    },
+    {
+      "id": "ch04-fig4-2",
+      "figure_label": "Figure 4-2",
+      "source_render": "docs/public/images/page-086-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        667,
+        723,
+        1149
+      ],
+      "output_image": "docs/public/images/figures/ch04-fig4-2.png",
+      "target_markdown": "docs/ja/ch04.md",
+      "notes": "Photo of USB Type A female connector, page 086 render. Split from Figure 4-1 above; independently captioned figure."
+    },
+    {
+      "id": "ch04-fig4-3",
+      "figure_label": "Figure 4-3",
+      "source_render": "docs/public/images/page-088-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        716
+      ],
+      "output_image": "docs/public/images/figures/ch04-fig4-3.png",
+      "target_markdown": "docs/ja/ch04.md",
+      "notes": "Four-panel numbered photo grid (cutting/stripping/fluxing cable) sharing a single 'Figure 4-3' caption, page 088 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch04-fig4-4",
+      "figure_label": "Figure 4-4",
+      "source_render": "docs/public/images/page-089-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        716
+      ],
+      "output_image": "docs/public/images/figures/ch04-fig4-4.png",
+      "target_markdown": "docs/ja/ch04.md",
+      "notes": "Four-panel numbered photo grid (soldering and insulating joints) sharing a single 'Figure 4-4' caption, page 089 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch04-fig4-5",
+      "figure_label": "Figure 4-5",
+      "source_render": "docs/public/images/page-090-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        95,
+        723,
+        717
+      ],
+      "output_image": "docs/public/images/figures/ch04-fig4-5.png",
+      "target_markdown": "docs/ja/ch04.md",
+      "notes": "Four-panel numbered photo grid (heat shrink sealing and finished cable) sharing a single 'Figure 4-5' caption, page 090 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch05-fig5-1",
+      "figure_label": "Figure 5-1",
+      "source_render": "docs/public/images/page-097-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        659
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-1.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Photo of cutting the ATX connector off the cable, page 097 render."
+    },
+    {
+      "id": "ch05-fig5-2",
+      "figure_label": "Figure 5-2",
+      "source_render": "docs/public/images/page-098-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        907
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-2.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Eight-panel numbered photo grid (crimp terminal attachment steps) sharing a single 'Figure 5-2' caption, page 098 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch05-fig5-3",
+      "figure_label": "Figure 5-3",
+      "source_render": "docs/public/images/page-099-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        93,
+        764,
+        715
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-3.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Six-panel numbered photo grid (diode series wiring steps) sharing a single 'Figure 5-3' caption, page 099 render. Cropped as one combined figure block."
+    },
+    {
+      "id": "ch05-fig5-4",
+      "figure_label": "Figure 5-4",
+      "source_render": "docs/public/images/page-100-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        116,
+        95,
+        710,
+        564
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-4.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Photo of wrapping unused wires/diodes in electrical tape, page 100 render. Table 5-1 below it on the same page is a separate content block (already represented as a Markdown table) and is not part of this crop."
+    },
+    {
+      "id": "ch05-fig5-5",
+      "figure_label": "Figure 5-5",
+      "source_render": "docs/public/images/page-101-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        185,
+        94,
+        716,
+        511
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-5.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Top photo on page 101 render (inserting crimp connector into header). Split from Figure 5-6 below; each has its own independent caption on the source page."
+    },
+    {
+      "id": "ch05-fig5-6",
+      "figure_label": "Figure 5-6",
+      "source_render": "docs/public/images/page-101-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        141,
+        632,
+        764,
+        1122
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-6.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Bottom photo on page 101 render (finished cable assembly). Split from Figure 5-5 above; independently captioned figure."
+    },
+    {
+      "id": "ch05-fig5-7",
+      "figure_label": "Figure 5-7",
+      "source_render": "docs/public/images/page-102-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        649
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-7.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Photo of Xbox interior showing power supply mounting screw locations (arrows), page 102 render."
+    },
+    {
+      "id": "ch05-fig5-8",
+      "figure_label": "Figure 5-8",
+      "source_render": "docs/public/images/page-104-render.png",
+      "source_size": [
+        864,
+        1296
+      ],
+      "box_type": "pixel",
+      "box": [
+        100,
+        93,
+        723,
+        687
+      ],
+      "output_image": "docs/public/images/figures/ch05-fig5-8.png",
+      "target_markdown": "docs/ja/ch05.md",
+      "notes": "Photo of 1U slimline ATX power supply connected to Xbox via modified cable, page 104 render."
     }
   ]
 }

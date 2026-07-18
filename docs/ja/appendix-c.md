@@ -7,7 +7,7 @@ translation_status: draft
 
 # 付録C　PCBレイアウト入門
 
-![Figure C-1: PCB design flow from idea to finished board](/images/page-243-render.png)
+![Figure C-1: PCB design flow from idea to finished board](/images/figures/appc-figc-1.png)
 **図C-1**: アイデアから、（誰かが代わりに製造して）完成した製品として届くまでの、基板設計の全工程。
 
 設計ルールチェッカーは回路図のエラーを検出するのに役立つが、実行されるチェックはたいてい初歩的なもので、最も明らかなミスしか見つけられない。一般的なチェック項目には、部品指定番号の重複、未接続のネット、フローティング入力などがある。
@@ -38,14 +38,14 @@ translation_status: draft
 
 表面実装デバイスは、かつてデファクトスタンダードだったスルーホール部品と比べて、高密度実装が可能という大きな利点を持つ。しかし、表面実装部品も、特に複雑な設計やオートルーティングを使った設計では、ルーティングのためにスルーホールビアが必要だ。このようなルーティングビアは、SMDランドの「ファンアウト」ビアと呼ばれる。図C-2と図C-3は、表面実装部品のファンアウトビアの使用例を示している。
 
-![Figure C-3: Fan-out regions around an SMD component's footprint](/images/page-247-render.png)
+![Figure C-3: Fan-out regions around an SMD component's footprint](/images/figures/appc-figc-3.png)
 **図C-3**: SMD部品のフットプリント周囲のファンアウト領域。
 
 ### デカップリングコンデンサをSMDランドの下に配置する
 
 一般的なデジタル設計において最も多く使われる受動部品は、デカップリングコンデンサだ。これらの小さなコンデンサは至る所に存在し、適切に配置されなければルーティングとビアファンアウトのスペースを消費してしまう。両面実装基板を使う場合、デカップリングコンデンサをターゲット部品のランドの反対側の面に配置することができる。部品のランドスペースの下にこれらの部品を置けば、ビアファンアウト領域を消費しない。
 
-![Figure C-2: Four views of a circuit board layout](/images/page-246-render.png)
+![Figure C-2: Four views of a circuit board layout](/images/figures/appc-figc-2.png)
 **図C-2**: 回路基板レイアウトの4つのビュー。左上から時計回りに：部品を実装した完成基板；PCBレイアウトプログラムのトップレイヤービュー；PCBレイアウトプログラムの全レイヤービュー；両面SMTレイアウトを示すトップ・ボトムレイヤーのみのビュー。
 
 うまく配置されたデカップリングコンデンサは、部品の電源ピンが使う電源ビアを共用できる。図C-2の左下のビューがこの技術をわかりやすく示している（この方法が適切でない特殊なケースもあるので、次のセクションで説明する）。
@@ -144,7 +144,7 @@ Protelのソフトウェアの30日間完全機能デモは、ウェブサイト
 
 完成した基板を取り付ける前に、レギュレータの電圧出力を必ずテストすること。抵抗値を間違えたりピンを取り違えたりすることは十分あり得る。その場合、Xboxに危険なほど高い電圧が流れ込む可能性がある。また、基板を固定設置する際には、XboxのケースやXboxの他の部品との偶発的な接触を防ぐため、基板の上下面を必ず絶縁すること。
 
-![Figure C-4: Example schematic diagram of the ATX power supply replacement adapter board](/images/page-253-render.png)
+![Figure C-4: Example schematic diagram of the ATX power supply replacement adapter board](/images/figures/appc-figc-4.png)
 **図C-4**: ATX電源交換アダプタ基板の回路図例。抵抗R1とR2は電圧レギュレータU1の出力電圧を+3.3Vに設定する。
 
 <small>
