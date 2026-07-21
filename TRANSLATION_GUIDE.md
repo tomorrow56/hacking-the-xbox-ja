@@ -273,6 +273,18 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
 
 - **Serpentine / meander trace (PCB length-matching):** serpentine trace / serpentine routing → `蛇行配線` / `サーペンタイン配線`; meander trace / meander routing → `ミアンダ配線`. On first explanatory mention, prefer function-first phrasing such as `蛇行させた配線パターン（サーペンタイン配線、ミアンダ配線）` or a concise equivalent — do not leave bare カタカナ alone when the function is clearer as `蛇行配線`.
 
+- **Design Rule Checker / DRC:** Introduce as `設計ルールチェッカー（DRC）` (the tool) or `設計ルールチェック（DRC）` (the process/action), depending on source context. After first use, `DRC` may be used directly without re-expanding.
+- **Board layout (PCB context):** Prefer `PCBレイアウト` for "board layout". Avoid bare `ボードレイアウト`.
+- **Board layout tool:** Prefer `PCBレイアウトツール`. Avoid bare `ボードレイアウトツール`.
+- **routing / route (PCB layout context):** Treat differently depending on grammar and meaning.
+  - As a noun/result/path: `配線`, `配線パターン`, `配線経路`, or `配線層`, depending on context.
+  - As an activity/process/gerund: `配線作業`, `配線する`, `配線を引く`, `引き回す`.
+  - First use in a CAD/process explanation may be `配線（ルーティング）`; after first use, prefer natural Japanese (`配線` or `配線作業`) and avoid overusing standalone `ルーティング`.
+  - "placement and routing" → `配置と配線作業`.
+  - "routing layer" → `配線層`.
+  - "routing tool" → `配線ツール` or `自動配線ツール`, depending on whether the source means a manual or automated tool.
+  - "route a trace" → `配線を引く`.
+
 - **`joint` in soldering prose:** Avoid bare `ジョイント` in Japanese electronics prose.
   - solder joint → `はんだ接合部` / `はんだ付け部` / `はんだ付けした部分` (choose for readability)
   - cold joint → `はんだ不良`; first mention → `コールドジョイント（はんだ不良）`
@@ -284,6 +296,11 @@ Use **「僕」** (not 「私」) for bunnie's first-person narration throughout
   - poor wetting → `はんだの濡れが悪い`; wetted joint → `はんだがよく回った接合部`
   - First mention: `ぬらす（ウェット）` or `はんだの濡れ性`; subsequent: `濡れ` or `はんだが回る`
   - Do not translate "wet" mechanically as `ウェット` or `濡れた` when it would imply water contact.
+
+- **Molten/liquid solder (liquid metal state during hand soldering):** Prefer `溶けたはんだ` for "liquid solder" / "molten solder" in hand-soldering prose. Avoid `液体はんだ` when it sounds unnatural — it reads clinical rather than describing hot, flowing metal.
+- **Flux cleanup:** For removing flux residue after soldering, prefer `洗浄`, `洗い流す`, or `除去する`. Avoid `クリーンアップ`.
+- **Steam / trapped-water damage inside components:** Prefer `破裂` over `爆発` unless the source clearly means an explosion (e.g., popcorning — moisture turning to steam inside a package with nowhere to escape). See `glossary.tsv` entry `popcorning (PCB defect)`.
+- **Soldering fumes (fan/ventilation context):** Prefer `煙を吸い出す`, `煙を逃がす`, or `吸い込まないようにする` over `吹き飛ばす` when describing a fan clearing flux fumes — a fan vents/draws the smoke away, it doesn't blow it off like debris.
 
 - **Acid flux / plumbing solder:** Use standard process Japanese and clear safety wording.
   - plumbing solder → `配管用はんだ`; plumbing flux → `配管用フラックス`; acid flux → `酸性フラックス`
@@ -577,3 +594,4 @@ Before marking any section complete, verify all 26 items:
 26. No bare `シグナル` for named electrical signals in prose; `信号` used consistently (`Power OK信号`, `Power On信号`).
 27. Soldering/hardware prose: no bare `コンポーネント` → use `部品`; no bare `ジョイント` → use `はんだ接合部`/`はんだ付け部`; no bare `ウェット`/`ウェッティング` as nouns → use `はんだの濡れ`/`濡れ性`/`はんだが回る`; acid-flux damage → `腐食`, not `侵食`; solder blob on pad → `はんだを盛る`/`盛ったはんだ`, not `はんだブロブ`; `はんだボール` only for actual detached solder balls or BGA balls; flux-cored solder → `フラックス入りはんだ`; circuit board → `基板` not `基盤`.
 28. Solder blob context check: if source says "put a blob/dot of solder on a pad before placing the component", the translation must use `はんだを盛る`/`盛ったはんだ` — not `はんだブロブ`, not `予備ハンダ` (unless source is specifically about pre-tinning), not `はんだボール`.
+29. PCB/soldering vocabulary added in PR #4/#5 follow-up: molten/liquid solder → `溶けたはんだ` (not `液体はんだ` when unnatural); flux cleanup → `洗浄`/`洗い流す`/`除去する` (not `クリーンアップ`); steam/trapped-water damage → `破裂` (not `爆発` unless source means an explosion); soldering fumes + fan → `煙を吸い出す`/`煙を逃がす`/`吸い込まないようにする` (not `吹き飛ばす`); DRC introduced as `設計ルールチェッカー（DRC）`/`設計ルールチェック（DRC）`; board layout → `PCBレイアウト`; routing/route rendered per noun-vs-activity grammar rule, not a blanket `ルーティング`.

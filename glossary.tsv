@@ -201,3 +201,16 @@ component count (netlist/PCB checking context)	部品数／接続部品数	For n
 resistive heating / resistance heating	抵抗成分による発熱／抵抗による発熱	PCB trace/current context (unwanted heating from trace resistance). Avoid 抵抗加熱, which reads as an intentional heating method. ジュール熱 acceptable if natural; do not over-formalize casual prose.
 serpentine trace / serpentine routing	蛇行配線／サーペンタイン配線	PCB length-matching trace pattern. First explanatory mention: 蛇行させた配線パターン（サーペンタイン配線、ミアンダ配線）or concise equivalent. Avoid leaving bare カタカナ without the 蛇行配線 function gloss.
 meander trace / meander routing	ミアンダ配線	Synonym/variant of serpentine trace in PCB length-matching context. See serpentine trace entry for first-mention pattern.
+liquid solder / molten solder	溶けたはんだ	Prefer 溶けたはんだ for "liquid solder"/"molten solder" in hand-soldering prose. Avoid 液体はんだ when it sounds unnatural.
+flux cleanup	洗浄／洗い流す／除去する	For removing flux residue after soldering. Avoid クリーンアップ.
+steam damage / trapped-water rupture	破裂	For steam/trapped-water damage inside components (e.g. popcorning). Prefer 破裂 over 爆発 unless the source clearly means an explosion.
+soldering fumes (ventilation)	煙を吸い出す／煙を逃がす／吸い込まないようにする	For fan/ventilation context clearing flux fumes. Avoid 吹き飛ばす, which implies blowing debris rather than venting smoke.
+Design Rule Checker / DRC	設計ルールチェッカー（DRC）／設計ルールチェック（DRC）	Tool → 設計ルールチェッカー（DRC）; process/action → 設計ルールチェック（DRC）. After first use, DRC alone is fine.
+board layout	PCBレイアウト	Avoid bare ボードレイアウト.
+board layout tool	PCBレイアウトツール	Avoid bare ボードレイアウトツール.
+routing (noun/result, PCB layout)	配線／配線パターン／配線経路／配線層	Context-dependent noun rendering of the completed wiring/path. See TRANSLATION_GUIDE.md for the grammar-based routing/route rule.
+routing (verb/process, PCB layout)	配線作業／配線する／配線を引く／引き回す	Gerund/activity rendering. First use in CAD/process explanation may be 配線（ルーティング）; avoid overusing standalone ルーティング after that.
+placement and routing	配置と配線作業	Standard PCB workflow phrase pairing.
+routing layer	配線層	
+routing tool	配線ツール／自動配線ツール	自動配線ツール for auto-routing tools specifically; 配線ツール more general.
+route a trace	配線を引く	
